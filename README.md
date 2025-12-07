@@ -1,2 +1,3 @@
-# lafreniere
-Recovered website from Gabriel Lafreniere
+# LaFreniere
+
+Gabriel LaFreniere lost & recovered website

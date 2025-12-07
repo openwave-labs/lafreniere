@@ -1,0 +1,237 @@
+<html>
+<!-- notice.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:51:04 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-gb">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="description" content="Notice">
+<meta name="keywords" content="matière, ondes stationnaires, Michelson, Lorentz, Einstein, Relativité, gravité, électron, quark, gluon, atome, lumière, champ magnétique">
+<title>Notice</title>
+
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+<body bgcolor="#E1E1E1">
+<p>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="notice_files/disclaim-element.js"></script>
+<script type="text/javascript" src="notice_files/graph-calc.js"></script>
+<script type="text/javascript" src="notice_files/jquery.html"></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "notice.html\/\/glafreniere.com\/notice.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "янв";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+</p>
+
+
+<p align="left"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; Home
+page&nbsp; <a href="matter.html">Matter is made of waves.</a></font></p>
+<p align="left"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table width="1000" border="4" cellpadding="20" cellspacing="6">
+    <tbody>
+      <tr>
+        <td>
+<p align="center"><b><font size="5" face="Times New Roman">NOTICE</font></b></p>
+          <p align="center"><font size="4" face="Times New Roman">Sorry, answering all your messages would
+          be a time
+          consuming duty.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">However, I read them all and I will
+          certainly react to any important or interesting idea.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">Thank you for
+          your support.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">Gabriel
+          LaFreniere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font size="4" face="Times New Roman"><a href="http://web.archive.org/web/20110126070852/http://glafreniere.com/webmaster@glafreniere.com">webmaster@glafreniere.com</a></font></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="100%"><font size="4" face="Times New Roman">
+          </font><p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">According
+          to Yahoo's statistics, this web site now reaches about 1000 visitors per
+          day and it is constantly growing. Many brilliant students more concerned with true physics and new
+          constructive ideas
+          will remember it in the future. They will
+          realize that their professors were sometimes like dinosaurs who refused
+          to evolve.</font> <font size="4" face="Times New Roman">
+          Actually, a lot of today's well accepted ideas are simply
+          wrong.&nbsp;</font></p><font size="4" face="Times New Roman">
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Descartes
+          told us. Everything ought to be carefully verified: "Doubt is the
+          origin of wisdom."</p>
+          <p align="center">&nbsp;&nbsp;&nbsp;</p>
+          <p align="center"><b>NO&nbsp; AMAZING INVENTIONS</b></p>
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">You
+          will not find here any indication that a better knowledge of
+          the wave nature of matter may lead to some amazing inventions. All of
+          matter's properties have already been discovered. The final touch was
+          just to explain <b><i>why</i></b> matter behaves like this.</p>
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Unfortunately,
+          I could not find any practical invention based on these discoveries.</p>
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">No,
+          there is no new sort of energy which could be cleaner and cheaper that
+          petroleum.</p>
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">And
+          no, I did not find the secret of levitation. I
+          must repeat here: if you one are impassioned of philosophy, religion,
+          or esotericism and the paranormal, you are politely invited to go
+          elsewhere. Here, one speaks quite simply about physics and mechanics.</p>
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Might
+          I also remind you that the Earth is over-populated.</p>
+          <p align="center"><a href="http://www.ibiblio.org/lunarbin/worldpop">http://www.ibiblio.org/lunarbin/worldpop</a></p>
+          <p align="center">
+			<a href="http://www.census.gov/cgi-bin/ipc/popclockw">http://www.census.gov/cgi-bin/ipc/popclockw</a></p>
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">There
+          are too many of us. Don't you see that this will end with a disaster?</p>
+          <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Where
+          is your intelligence?</p>
+          </font></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="MsoTitle" style="text-indent: 35.4pt" align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<p class="MsoTitle" style="text-indent: 35.4pt" align="center"><img src="notice_files/donat_lafreniere.jpg" width="322" border="0" height="504"></p>
+
+<p class="MsoTitle" style="text-indent: 35.4pt" align="center"><font size="4" face="Times New Roman">&nbsp;My
+father, just graduated&nbsp; in 1921 from École Normale Jacques-Cartier,
+Montréal, Québec.</font></p>
+
+<p class="MsoTitle" style="text-indent: 35.4pt" align="center"><font size="4" face="Times New Roman">Born
+Nov 19, 1901, this "<a href="images/bicyclette.html">centenary bicycle man</a>" passed away on Jan 10,
+2005 at the age of 103 years.</font></p>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="Рейтинг@Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	</font>
+</blockquote>
+
+</body>
+<!-- notice.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:51:23 GMT -->
+</html>

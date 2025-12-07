@@ -1,0 +1,1040 @@
+<html>
+<!-- sa_fields.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:31:28 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Fields of Force.</title>
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></font><!-- BEGIN WAYBACK TOOLBAR INSERT --><script type="text/javascript" src="sa_fields_files/disclaim-element.js"></script><script type="text/javascript" src="sa_fields_files/graph-calc.js"></script><script type="text/javascript" src="sa_fields_files/jquery.html"></script><script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "sa_fields.html\/\/glafreniere.com\/sa_fields.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "янв";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script><style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style><script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script><!-- END WAYBACK TOOLBAR INSERT --></p>
+
+
+<font face="Arial" size="4">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span>19<span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font size="6" face="Times New Roman"><span style="letter-spacing: 1">FIELDS
+OF FORCE</span></font></p>
+      <font size="4" face="Times New Roman">
+        
+      <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+      <p align="center"><img src="sa_fields_files/masse_active02.gif" width="407" border="0" height="75"></p>
+      <p align="center">The Coulomb field of force between two billiard balls make them
+      decelerate or accelerate.</p>
+      <p align="center">The mass gain as kinetic energy is transferred to the
+      field from the ball
+      on the left-hand side.</p>
+      <p align="center">Then the field transmits the equivalent kinetic energy to the
+      other ball, whose mass increases.</p>
+      <p align="center">However, from the field's point of view, both balls are
+      symmetrically bouncing on each other.</p>
+      <p align="center">This calculus is based on Lorentz's mass gain:&nbsp; M =
+      a + r&nbsp; according to <a href="sa_active.html">active and reactive mass</a>.</p>
+      <p align="center">T is the total mass for both balls, so that the 3 <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font face="Times New Roman"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span></font></span>
+      T delta mass must be temporarily allotted to the field.</p>
+      <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Action
+        and reaction between two billiard balls is essentially caused by
+        electrostatic fields of force, which are responsible for the well-known Coulomb force. The repulsion
+        effect is easily explainable by the fact that electrons only (rarely
+        protons vs. electrons) come very close together when two pieces of matter
+        collide.</p>
+        
+        <p align="left"><b>Electrons always create fields of force.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Electrons are constantly
+        radiating outgoing spherical waves all around. Thus, when two
+        electrons come close together, waves meet between
+        them and produce the very special ellipsoid standing wave pattern below.</p>
+        
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <div align="center">
+          <table border="5" cellpadding="0">
+            <tbody><tr>
+              <td width="100%">
+                <p align="center"><img src="sa_fields_files/champbiconvexe01.gif" width="301" border="0" height="201"></p></td>
+            </tr>
+          </tbody></table>
+        </div>
+        <p align="center">The "biconvex" electrostatic field of force.</p>
+        <p align="center">The wave addition produces ellipsoidal standing waves.</p>
+        <p align="center">&nbsp;&nbsp; The amplitude is nil beyond electrons and
+        it reaches a maximum exactly at the center.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p align="center"><img src="sa_fields_files/diffractive01.gif" width="200" border="0" height="200"></p>
+        <p align="center">The orthogonal central pattern as seen from electrons.</p>
+        <p align="center">This structure is that of the diffractive lens.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">On
+        the one hand, the cross section structure is clearly that of the diffractive
+        lens .</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">On
+        the other hand, all standing waves should be amplified the
+        same way electrons are because of a lens effect (different from the
+        diffractive lens effect below). This field of force is amplified as well and
+        the resulting energy according to mc^2 must be considered as additional mass.
+        Fields of force are true matter, especially gluonic fields, whose energy
+        is much higher than the plain electron pair which is creating it. They
+        are some
+        sort of "canned" kinetic energy and they are responsible for nuclear
+        energy.</p>
+        <p align="left"><b>The diffractive lens.</b></p>
+        <p align="center"><img src="sa_fields_files/coulomb03.gif" width="139" border="0" height="139"></p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Please
+        observe that the cross section pattern is
+        identical to that of the diffractive lens. Such a lens
+        is possible because of the Huygens Principle. Each concentric obstacle stops or diffracts any wavefront whose
+        energy is opposite in phase with respect to the focal point.
+        Thus, all remaining Huygens' wavelets are roughly in phase on a binary
+        basis. The main difference is its <b><i>hyperbolic</i></b>   shape
+        especially on both ends.</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Fields
+        of force act like a diffractive lens because waves cannot travel freely through antinodes,
+        where the aether density is variable. This is an undisputable principle:
+        waves need a medium whose density must be constant in order to propagate
+        with a constant velocity. They do travel
+        freely through nodes, where density is constant, but they are weakly but
+        surely scattered by
+        each antinode. Thus, the addition for so many of them is finally decisive.&nbsp;</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Clearly, the
+        amplified field of force should act more or less like an emitter whose
+        structure is that of the diffractive
+        lens. There is a converging effect. A significant part of the energy is
+        focused towards both electrons. From another point of view, the field
+        acts like a "diffractive mirror" capable of returning back all
+        waves incoming from two electrons simultaneously. This explains <b><i>radiation
+        pressure</i></b> and also <b><i>action and reaction</i></b>.&nbsp;</p>
+        <p align="left"><b>The phase rotation.</b></p>
+        </font><p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">However,
+
+        it is not that simple because the whole concentric node and 
+antinode structure is moving away
+        from the center. This produces a phase rotation, which is very 
+regular
+        everywhere because variable radii for concentric areas are 
+compensated
+        by variable velocity. Obviously, such a field alone cannot 
+focalize energy because it is constantly rotated in phase in such a way 
+that
+      outgoing waves only are amplified.</font></p>
+      <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">But
+        it is not the case if the pattern is periodically stopped much the
+        same way a stroboscope can apparently immobilize any rotating unit such
+        as a wheel or a fan.</font></p>
+      <font size="4" face="Times New Roman">
+        <p align="left"><b>The stroboscope effect.</b></p>
+      <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">The
+        electron acts like a perfect stroboscope because all its node and
+        antinode structure oscillates simultaneously. The electron is a finite
+        standing wave system, but its partially standing wave area nevertheless
+        expands through billions of wavelengths. Its influence inside the field
+        of force is determinant.</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">So,
+        when two electrons come rather close together, the wave addition clearly
+        produces a stroboscopic effect on the field of force, at least in their
+        respective area. Theoretically,
+        three traveling wave trains are involved. If phases do not coincide, nodes
+        and antinodes are weakened. They are rather strengthened when all three
+        phases coincide.</p>
+      <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">The
+
+        important point is that this process is simultaneous. The 
+electron spin
+        does not matter either because nodes and antinodes appear 
+simultaneously
+        for both spins, while they appear with a pi / 2 phase offset for
+ positrons whatever their spin. In all cases, this partially cancels the
+        phase rotation inside the field of force.</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Finally,
+        the amplification process produces Huygens wavelets which are mostly in
+        phase with respect to electron or positron pairs, but the phase is
+        opposite for an electron in the presence of a positron on a go and return trip.
+      Then an attraction effect rather occurs as a result of stronger waves
+      incoming from the opposite side.</p>
+        <p align="left"><b>The electron synchronization.</b></p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Additionally,
+        in the presence of many electrons, the stroboscopic effect between each
+        of them matches constantly because all electrons oscillate
+      simultaneously. If the phase does not match exactly for a given electron,
+      the whole oscillating structure will correct the anomaly. This
+      synchronization phenomenon also influences the
+      positron spin as long as it is not well secured inside a proton. It will slowly transform into an electron unless it
+        previously reacts with the nearest electron and produce a quark.</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">This
+        occurs inside and around regular atomic structures because electrons are
+        always nearer to each other. The nucleus may rather contain many positrons
+        where the phase synchronization is compatible because the gluonic field
+        conveniently produces a central area where the phase in <b><i> quadrature</i></b>
+        allows it. The animated diagram below clearly shows this surprising phenomenon.</p>
+        
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">The
+        stroboscopic effect is also well visible. The diffractive lens structure
+        is no longer regularly moving away from the center. It is rather moving
+        by successive pulses separated by a pause. This happens because the electron partially standing waves
+        (where outgoing waves are stronger) progressively
+        transform into pure standing waves nearer to its center.&nbsp;</p>
+        
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <div align="center">
+          <table border="5" cellpadding="0">
+            <tbody><tr>
+              <td width="100%">
+                <p align="center"><img src="sa_fields_files/proton09.gif" width="640" border="0" height="358"></p></td>
+            </tr>
+          </tbody></table>
+        </div>
+      <p align="center">Two electrons very close together produce a quark with a
+      very strong gluonic field.</p>
+      <p align="center">&nbsp;Three quarks placed crosswise on the three
+      Cartesian axes produce a neutron.</p>
+      <p align="center">Surprisingly, the phase in the center conveniently
+      matches the positron's.</p>
+      <p align="center">Thus, a positron can hide in the center and produce a
+      proton.</p>
+      <p align="center">Also, please observe the <b><i>stroboscope effect</i></b>.</p>
+      <p align="center">&nbsp;&nbsp;&nbsp;</p>
+      </font>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">
+      <font size="4" face="Times New Roman">
+        Matter
+      in the whole universe contains as many positrons as electrons because most
+      atomic structures maintain an equilibrium between them. As a matter of
+      fact, positrons are not different from electrons except for phase, which
+      is quadrature.
+      Antimatter is just a relative point of view, especially because
+      electrons or positrons are submitted to the Lorentz transformations.
+      Obviously, their frequency should slow down when they are moving very fast. Thus
+        fast moving matter with
+      respect to an observer at rest is constantly transforming into antimatter,
+      then into regular matter, and so on.</font></p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">
+      <font size="4" face="Times New Roman">
+        Any
+        moving electron is constantly transforming into a positron, then into an
+        electron
+      of opposite spin, and so on according to four pi / 2 phase steps. This is
+      the cause of electric fields and magnetic fields involving the Lorentz
+      force. As seen from any
+      unmoving matter, electrons moving inside parallel feeders produce
+      induction and self-induction as a result of the phase rotation. Similarly,
+      electrons moving inside a coil constantly exhibit a phase rotation which
+      explains the magnetic effects. When they are positrons, they cannot react
+        with unmoving electrons in the coil, firstly because their phase changes
+        rapidly, and secondly because their path inside any conductive atomic
+        structure is free from electrons. Otherwise, moving electrons hitting
+        matter certainly produce strong effects such a light emission and even
+      X-Rays for faster speed.</font></p>
+      <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Thus
+      many moving electrons behave like neutral particles inside unmoving
+        conductive matter, but they still behave constantly like electrons with
+      respect to each other. Because of this elasticity, they behave like a moving
+        medium for high frequency electronic waves. This strongly suggests that
+        their true speed inside a 300 Ohms TV feeder, for example, is certainly not
+        80% of the speed of light, which is the signal velocity. The electron
+      true speed is rather slow, and they simply move
+        to and fro in the case of standing waves.</font></p>
+      <font size="4" face="Times New Roman">
+        <p align="left"><b>Billions of stacked hyperbolic diffractive lenses.</b></p>
+        
+      </font>
+        
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">
+      <font size="4" face="Times New Roman">
+        Additionally,
+        there are a lot of diffractive lenses stacked between both electrons, actually billions of them.
+        So their additive effect should strongly focalize a lot of Huygens'
+        wavelets.
+        
+      </font>
+        
+      </p>
+      <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">My
+        most recent analysis of the global effect reveals that it should be a
+        mix between the well-known Fresnel diffraction pattern and the Airy disk.
+      It is quite uncertain because my
+        program for this becomes much too slow if the goal is to analyze the whole
+        emitting, then receiving 3-D space vs. a complete phase rotation. However, using shortcuts, the computer
+        indicates that
+        the axial alternating higher and lower amplitude zones, which are
+        typical of both the Airy disk and the Fresnel diffraction pattern,
+        should be still present.&nbsp;From another point of view, it is a well
+      known fact that apodization
+        erases all traces of such patterns. But it is unlikely to be possible
+        here because the source energy should match the Gaussian normal
+        distribution.&nbsp;Clearly, it is not the case here.</font></p>
+      <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">The
+        animated diagram below displays only the Fresnel diffraction pattern. Whatever the distance between two electrons, the
+        effect should be constant because of a surprising phase shift which occurs between
+        each higher amplitude zone.
+        
+      </font>
+        
+      </p>
+        
+      <font size="4" face="Times New Roman">
+        
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <div align="center">
+          <table border="5" cellpadding="0">
+            <tbody><tr>
+              <td width="100%">
+                <p align="center"><img src="sa_fields_files/coulomb01.gif" width="568" border="0" height="141"></p></td>
+            </tr>
+          </tbody></table>
+        </div>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <div align="center">
+          <table border="5" cellpadding="0">
+            <tbody><tr>
+              <td width="100%">
+                <p align="center"><img src="sa_fields_files/coulomb02.gif" width="437" border="0" height="141"></p></td>
+            </tr>
+          </tbody></table>
+        </div>
+        <p align="center">The field of force acts like a diffractive lens.</p>
+        <p align="center">A lambda / 2 phase shift occurs between each high-energy
+        zone.</p>
+        <p align="center">The result is a constant repulsion or attraction
+        effect depending on the relative phase.</p>
+        <p align="center">&nbsp;&nbsp;</p>
+        
+      </font>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+        
+      <p align="center">&nbsp;&nbsp;</p>
+        
+      <p align="center"><b>THE AMAZING PROPERTIES OF CONCENTRIC ELLIPSES</b></p>
+        
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+      <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">In
+        order to work properly, the field of force must exhibit stunning
+        properties. The goal is to justify <b><i>radiation pressure</i></b>,
+        which is at the very basis of <b><i>matter mechanics</i></b>. The phase must obviously
+        match for nodes and antinodes
+        everywhere inside a huge 3-dimensional space. This suggests holography.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        ellipsoid mirror is perfect for this. The diagram below especially shows that
+        exchanges between two electrons via many theoretical concentric ellipsoid
+        mirrors
+        constantly match the wavelength because all distances are always <b><i> integer
+        multiples</i></b>.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">All
+        concentric (theoretical) mirrors have the same focal points A and D.
+        Whatever their path, spherical waves emitted from A always reach D in
+        accordance with the same phase. Actually, the node and antinode pattern <b><i>is
+        not</i></b> a mirror but the amplification process produces a similar
+        effect.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Finally,
+        all ellipsoid layers act like mirrors and spherical
+        waves are perfectly focalized towards the
+        opposite electron.</p>
+        
+      </font>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+        
+      <p align="center">&nbsp;&nbsp; <img src="sa_fields_files/ellipse01.gif" width="389" border="0" height="384"></p>
+        
+      <font size="4" face="Times New Roman">
+        
+      <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+      <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>The ellipse is also the basis of the Lorentz
+        transformations.</b></p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Because
+        the field of force is already ellipsoid, the Lorentz transformations
+        simply modify its structure while it moves into a different one whose
+        properties do not change. As far as I know, I am the first one to point
+        out that the Lorentz transformations are just how the Doppler effect
+        transforms matter, and that the
+        ellipse is totally founded on its basic magnitudes.</p>
+        
+        </font><p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        diagram below shows that Lorentz's contraction factor g and the theta angle as compared to the normalized beta
+        velocity are related to the ellipse. Poincaré's "aberration"
+        according to g squared, which he used in order to explain Relativity, is
+        the radius (r) of the smaller circle of reference. The gamma factor is
+        that of the larger one.&nbsp;&nbsp;&nbsp;
+        
+      </font>
+        
+      </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+        
+      <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+      <p align="center"> <img src="sa_fields_files/ellipse02.gif" width="545" border="0" height="540"></p>
+  <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+      <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The famous astronomer
+        Karl Schwarzschild found a constant K in order to make
+        accurate squashed or elongated ellipsoid, paraboloid and even hyperboloid Cassegrain
+        telescope mirrors, whose primary focus point (f) is half of the r or r' radius. Schwarzschild's
+        constant is 0 for a sphere and <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font face="Times New Roman"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span></font></span>1
+        for a parabola. It is higher than 0 (positive) for squashed (oblate) ellipses and
+        lower than <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font face="Times New Roman"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span></font></span>1
+        for hyperbolas.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Any
+        value between 0 and <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font face="Times New Roman"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span></font></span>1
+        for K&nbsp; = <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font face="Times New Roman"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span></font></span>beta
+        ^ 2&nbsp; =&nbsp; g ^ 2 <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font face="Times New Roman"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span></font></span>
+        1&nbsp; produces elongated (prolate) ellipses. Using Schwarzschild's formula,
+        please note that r stands
+        for the smaller circle of reference radius for parabolas and prolate
+        ellipses. It rather stands for the larger
+        circle of reference radius for oblate ellipses.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">However,
+        it turns out that Schwarzschild's constant is interconnected with the r radius.
+        It is redundant, but one may prefer to use it anyway in order to avoid the
+        conversion to R while working on telescope mirrors. Otherwise, the
+        simplified sagitta formula below for the ellipse rather uses a radius R = x
+        / 2 which is that of the ellipse's larger radius (or that of its
+        circumscribed circle).</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        sagitta according to Schwarzschild is given by:</p>
+        
+        <p align="center">sag = h ^ 2 / (r * (1 + sqr(1 <span style="mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font face="Times New Roman"><span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span></font></span>
+        (h ^ 2 / r ^ 2) * (K + 1))))</p>
+        
+        <p align="center">For the circle:&nbsp; sag = R <span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>
+        sqr(R ^ 2 <span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>
+        h ^ 2) )</p>
+        
+        <p align="center">For the parabola:&nbsp; sag = h ^ 2 / 2 r</p>
+        
+        <p align="center"><span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">Simplified
+        formula for the ellipse:&nbsp; sag = R – sqr(R<sup> 2</sup> – (h /
+        g)<sup> 2 </sup>) = .2</span></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">It
+        should be emphasized that there is no such thing as prolate or oblate
+        ellipse. Those words are rather related to a specific portion of
+        the ellipse, so that there is no true sagitta for the so-called oblate
+        ellipse. The equivalent orthogonal sagitta is more exactly the
+        prolongation of the h (height) distance and it is given by a calculus based on
+        the ellipse's true sagitta (h' = R <span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>
+        sag). However, as compared to that of a circle (see formula above) it is
+        contracted according to g:</p>
+        
+        <p align="center">Pseudo-sagitta for the oblate ellipse:&nbsp; sag' = g
+        * (R <span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>
+        sqr(R ^ 2 <span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>
+        (R <span style="font-size:14.0pt;mso-bidi-font-size:
+12.0pt;font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA"> –</span>
+        sag) ^ 2) ) = .2</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">To
+        say it shortly, an ellipse is an ellipse. Period.</p>
+        
+        <p align="left"><b>Action and reaction.</b></p>
+        
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Fields
+        of force are responsible for action and reaction because they can
+        simultaneously focalize energy towards two electrons in two opposite
+        directions.</p>
+        
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Fields of force are matter. They
+        contain energy
+        according to E = mc^2 and they are submitted to the Lorentz
+        transformations. So the node and antinode structure (hence all ellipses)
+        undergo a contraction according to g and the phase wave according to
+        Lorentz's t' equation maintains a virtual simultaneity for action and
+        reaction. And finally, the Doppler effect is not perceptible from the
+        field point of view because shorter waves move slower than longer
+        ones, which rather move faster with respect to the frame of reference. Thus, the radiation pressure on both
+        electrons is constant whatever their relative velocity or direction.</p>
+        
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Amazingly, in spite of the Doppler effect,
+        fields of force
+        always act as if they were at rest. This principle is not really related
+        to Relativity because there is only one frame of reference to consider,
+        that of the field of force. It is rather one of the most important
+        principles related to the <b><i>New
+        Mechanics</i></b>, and it will allow us to easily upgrade
+        Newton's laws.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">For
+        example, Newton's third law "For every action there is an equal but
+        opposite reaction" actually means that from the field's point of
+        view, there is always opposite and equal action. It should rather
+        be called the "Principle of Double Action" because
+        the electrostatic field of force focuses energy equally towards both
+        electrons whatever their true speed. Instead of a billiard ball hitting
+        another one which is at rest, one can more easily consider that both
+        balls are simply bouncing on each other like this:</p>
+        
+        <p align="center"><img src="sa_fields_files/masse_active03.gif" width="407" border="0" height="75"></p>
+        
+      </font>
+        
+      
+        
+      
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">
+      <font size="4" face="Times New Roman">
+        
+        There
+        is no simpler way to mathematically obtain the correct results because,
+        from an absolute point of view, action and reaction <b><i>are not</i></b>
+        equal. Newton was wrong on this because he was not aware that kinetic
+        energy is the consequence of Lorentz's mass gain. The diagram clearly
+        shows that when both 1 kg balls (M = a + r and total mass T = 4) are temporarily stopped, the
+        field of force contains m = 2 kg (delta = T <span style="mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA">–</span>
+        2) of "canned" kinetic energy according to mc^2 which allows
+        it to finally re-accelerate both of them in opposite direction at 86.6%
+        of the speed of light.
+        
+      </font>
+        
+    </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">It
+
+        should be emphasized that the total mass T for both balls and 
+the field
+        of force is constantly 4 kg. So the law of conservation of 
+energy is
+        still valid, but it is true only as seen from the field of 
+force. After the collision, the ball on the right hand side may be
+      considered at rest and its mass should be 1 Kg. But the other ball
+ would
+        seem to move away according to Poincaré's law of velocity 
+addition:
+        
+      </font>
+        
+    </p>
+        
+        <p align="center">
+        
+      <font size="4" face="Times New Roman">
+        
+      beta prime = (beta 1 + beta 2) / (1 + beta 1 * beta 2)</font></p>
+        
+      <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Beta
+      1 and beta 2 are both sin 60° = 866, so beta
+      prime is .9897 and gamma is exactly 7. This means that, from each ball point of
+      view, the mass for the other ball moving away at 98.97% of the speed of
+      light is 7 kg. So the total mass is 2 * 4 = 8 kg according to beta = .866 and
+      gamma = 2 because the frame of reference velocity has been accelerated from 0 to .866.</font></p>
+        
+      <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Clearly,
+      the total mass and energy is dependent on the frame's velocity.</font></p>
+        
+    <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">On
+    the one hand, action and reaction are equal only if the frame is at rest. So
+    it is much preferable to presume that it <b><i>is</i></b> at rest...</font></p>
+        
+    <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">On
+    the other hand, if one billiard ball is moving and the other one is at rest
+    from the observer's point of view, the speed and mass for both of them must
+    be firstly converted according to Poincaré's law of velocity addition. Then
+    the calculus for the energy transfer becomes possible according to active
+    and reactive mass. It is just a matter of active and reactive mass addition,
+    which can be easily performed in a single operation if there is no
+    significant deformation. For oblique collisions, active and reactive mass
+    must be tempered according to the cosine of the angle (actually the Doppler
+    effect).&nbsp;</font></p>
+        
+    <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Finally,
+    all results must be converted once again. I admit that this procedure seems
+    to be the hard way, but it is likely to be unavoidable in order to obtain
+    perfect results.</font></p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+        
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+        
+      <p align="center"><img src="sa_fields_files/underconstruction.jpg" width="300" border="0" height="234"></p>
+        
+      <font size="4" face="Times New Roman">
+        
+      <div align="center">
+        <center>
+        <table width="80%" border="5" cellpadding="40">
+          <tbody><tr>
+            <td width="100%">
+        
+      <font size="4" face="Times New Roman">
+        
+      <p align="center">Please be patient.</p>
+      <p align="center">This page will need a lot of additional updates because
+      fields of force are complex.</p>
+      <p align="center">We are especially working on a new version of the 
+		<a href="sa_aether.html">Virtual
+      Aether</a>, which will be capable of a lens effect. So the electron
+      amplification as well as the field of force mechanism will become
+      verifiable. There is no doubt about this because the air itself is capable of
+      a lens effect. I could check this using a spherical mirror, a Foucault
+      apparatus and a stroboscope; then standing waves become well visible. No doubt
+      that they should also become visible using ultrasonic imaging devices (ultrasonography).&nbsp;</p>
+        
+      </font>
+        
+            </td>
+          </tr>
+        </tbody></table>
+        </center>
+      </div>
+      <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span>19<span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Relativistic_Big_Bang.html">The Relativistic Big 
+					Bang </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_phaseshift.html">The Electron Phase Shift </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_mechanics.html">The Wave Mechanics </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					Fields of Force </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_gravity.html">Gravity </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_quarks.html">Quarks </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_atoms.html">Atoms </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_experiences.html">Proofs and Experiences </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+
+<p align="center">&nbsp;</p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman"><center>
+        <p align="left"></p></center>Gabriel LaFreniere<p></p>
+        <p align="left">Bois-des-Filion in Québec.</p>
+        <p align="left">Email&nbsp; <a href="notice.html">Please read this
+        notice.</a></p>
+        </font><p align="left"><font size="4" face="Times New Roman">On the Internet since September 2002. Last update
+        December 3, 2009.</font></p>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p>&nbsp;</p>
+
+      </font>
+        
+
+
+
+
+</font></font>
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- sa_fields.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:33:21 GMT -->
+</html>
+

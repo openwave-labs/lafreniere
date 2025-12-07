@@ -1,0 +1,1007 @@
+<html>
+<!-- sa_experiences.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:47:32 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Proofs and experiences.</title>
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></font><!-- BEGIN WAYBACK TOOLBAR INSERT --><script type="text/javascript" src="sa_experiences_files/disclaim-element.js"></script><script type="text/javascript" src="sa_experiences_files/graph-calc.js"></script><script type="text/javascript" src="sa_experiences_files/jquery.html"></script><script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "sa_experiences.html\/\/glafreniere.com\/sa_experiences.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "29";
+var displayMonth = "окт";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script><style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style><script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script><!-- END WAYBACK TOOLBAR INSERT --></p>
+
+
+<font face="Arial" size="4">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				32 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font size="6" face="Times New Roman"><span style="letter-spacing: 1">PROOFS
+AND EXPERIENCES</span></font></p>
+      <font size="4" face="Times New Roman">
+        
+      <p align="center">&nbsp;&nbsp;&nbsp;</p>
+      <div align="center">
+        <center>
+        <table border="4" cellpadding="0" cellspacing="6">
+          <tbody><tr>
+            <td>
+              <p align="center"><img src="sa_experiences_files/ether18_01.jpg" width="204" border="0" height="231"></p></td>
+            <td>
+              <p align="center"><img src="sa_experiences_files/ether18_02.jpg" width="400" border="0" height="234"></p></td>
+          </tr>
+        </tbody></table>
+        </center>
+      </div>
+      <p align="center">This is the Fresnel-Fraunhofer diffraction pattern
+      generated by a
+      moving linear emitter.</p>
+      <p align="center">On the left hand side, the
+      pattern is compressed only on the direction of motion (horizontal axis).</p>
+      <p align="center">If the emitter is placed vertically, the pattern is
+      still compressed horizontally according to Lorentz's predictions.</p>
+        
+      </font>
+        
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="100%">
+        <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>More recent experiences in favor of Lorentz's
+        Relativity.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+
+        above diagram is a flawless demonstration that Lorentz's 
+contraction
+        really occurs for optical phenomena. In spite of the Doppler 
+effect, the Fresnel-Fraunhofer diffraction pattern
+        proves to remain
+      perfectly symmetric in such a way that motion cannot be detected. 
+Those
+        results are possible thanks to Mr. Philippe
+      Delmotte's and Jocelyn Marcotte's virtual medium, which is a 
+powerful laboratory. The results are not disputable because they can 
+also be
+        reproduced using true physical devices and true waves such as 
+the sound
+        waves. They are much easier to obtain using the computer, 
+though.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        important point is that today's computers are amazingly fast and
+        reliable. Especially, it becomes clear
+        that Lorentz's Relativity, which is based on the existence of a
+        preferred frame of reference (the aether) and on actual matter contraction,
+        will replace Einstein's because it also explains matter mechanics. This
+        will lead us well beyond a mere Relativity effect.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        more our skill is improving, the more we are capable of making <b><i>experiences</i></b>.</p>
+        </font><p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">In
+        addition, Lorentz's Relativity strongly suggests that matter is made of
+        waves. The
+        Wave Nature of Matter is on its way to be demonstrated.
+        
+        </font> 
+        
+        </p><p align="left"><font size="4" face="Times New Roman"><b>The Michelson Interferometer.</b></font></p> 
+        
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">More
+          recently, we worked hard to obtain the best results from this virtual
+          medium. A lot of annoying artifacts and anomalies were corrected. Now,
+          our images are quite smooth and natural.&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Below
+          are several new improved video clips showing how light travels in the
+          Michelson Interferometer. There is a choice of two velocities.
+          Firstly, half of the speed of light or 0.5 c, and secondly, 0.7 c.
+          Transverse waves are tilted to an angle which is given by: arc sin
+          (v/c), that is 30° and 45°. This behavior proves to be highly
+          consistent with the Lorentz Transformations. The interferometer
+          contraction leads to a modified angle for the beam splitter, whose
+          normal angle is 45° when the apparatus is stationary. Surprisingly,
+          the new angle works fine and <b><i>apparently</i></b>, all seems to
+          happen as though the interferometer was still at rest. Judge by
+          yourself.</font></p>
+          <p align="center"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><font size="4" face="Times New Roman">
+			<a href="mkv/Michelson_Interferometer.5c.html">Michelson_Interferometer.5c.mkv<o:p>
+          </o:p>
+          </a>
+          </font></span></p>
+          <p align="center"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;"><font size="4" face="Times New Roman">
+			<a href="mkv/Michelson_Interferometer.7c.html">Michelson_Interferometer.7c.mkv<o:p>
+          </o:p>
+          </a>
+          </font></span></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;" lang="FR"><font size="4" face="Times New Roman">Spherical
+          outgoing waves are reflected on a parabola in order to obtain
+          transverse plane waves. They are tilted to a theta = arc sin (v/c)
+          angle. Thus, they are traveling slightly frontward in such a way that
+          the interferometer constantly follows them. Then the beam splitter
+          produces two separate and orthogonal beams which are reflected back by
+          the plane mirrors. The mirror on the right is nearer to the beam
+          splitter than the upper one because of the contraction, and the beam
+          reunification indicates that Lorentz's hypothesis (Larmor and
+          FitzGerald also proposed it)&nbsp;was correct.</font></span></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;" lang="FR"><font size="4" face="Times New Roman">These
+          images are also showing a very interesting optical effect: the beams
+          are finally reunified by the beam splitter. Almost no light returns to
+          the emitter. This occurs because the beam splitter does not really
+          "reflect" the light beam. Matter on the transparent layer
+          emits wavelets instead, whose phase is opposite. These wavelets cancel
+          one half of the wave energy passing through it but their addition on a
+          90° angle produces a new wave front whose phase is lambda/4 shifted.
+          This phenomenon is a confirmation that the light waves cannot be
+          stopped by matter. Surprisingly, the shade behind matter is caused by
+          wavelets whose phase is opposite. This is not really a surprise
+          because radio waves, X-rays and gamma rays are <b><i>not</i></b>
+          stopped by matter. Let's face it, most of the spectrum obeys this rule
+          and the light is the exception. In addition, a metallic screen or wire
+          (especially a parasite antenna) are well known to capture some of the
+          energy and then emit such wavelets whose phase is opposite. According
+          to their number and their distribution, they also produce a shade
+          exhibiting a characteristic diffraction pattern. However, in this
+          case, the beam splitter very thin reflecting layer is insufficient to
+          cancel the whole energy passing through it.</font></span></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;" lang="FR"><font size="4" face="Times New Roman">Naturally,
+          one should compare with what is going on when the interferometer is
+          really at rest.</font></span></p>
+          <p align="center"><span style="mso-fareast-font-family: MS Mincho; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA"><font size="4" face="Times New Roman">
+			<a href="mkv/Michelson_Interferometer_Stationary.html">Michelson_Interferometer_Stationary.mkv</a></font></span></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family:&quot;MS Mincho&quot;" lang="FR"><font size="4" face="Times New Roman">It
+          is even more important to compare with what happens if the set does
+          not undergo Lorentz's contraction. The video below shows that
+          Michelson's calculus was correct - except for the contraction, which
+          was quite unpredictable. This proves that Lorentz's idea was just
+          great!<o:p>
+          </o:p>
+          </font></span></p>
+          <p align="center"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">
+			<a href="mkv/Michelson_Interferometer_No_Contraction.html">Michelson_Interferometer_No_Contraction.mkv<o:p>
+          </o:p>
+          </a>
+          </font></span></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho" lang="FR">The
+          codec is Mpeg-4 
+			<a href="http://www.divx.com/en/products/software/windows/divx">DivX
+          7 - DivX Plus</a> (well established H-264/AAC) using Matroska files
+          with .mkv extension. Matryoshka means "Russian dolls", as
+          this system allows one to include a menu and many chapters, audio and
+          subtitle choices, which could be useful here. Those files are
+          significantly smaller for a given quality. I hope that the whole
+          Internet will finally focus on them to get rid of all this mess about
+          compatibility. Most of new DVD et Blu-ray players should easily play
+          them, as well as Windows Media Player, Zoom Player, VLC Media Player,
+          DivX Player, etc. If you still experience some difficulties, you may
+          download (free, Zoom Player included) the whole nine yards from 
+			<a href="http://www.cccp-project.net/">CCCP</a>,
+          which means Combined Community Codec Pack, not USSR!</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho" lang="FR"><font size="4" face="Times New Roman">I
+          wrote and used the <a href="http://www.freebasic.net/">FreeBasic</a>
+          program below to produce the diagrams:</font></span></p>
+          <p align="center"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">
+			<a href="mkv/Michelson_Interferometer.html">Michelson_Interferometer.bas<o:p>
+          </o:p>
+          </a>
+          </font></span></p>
+          <p align="left"><b><font size="4" face="Times New Roman">Decisive
+          results.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">By
+          comparison, Special Relativity now appears frankly unreasonable. Those
+          results are actually devastating for supporters of Einstein's Special
+          Relativity. They were comfortably installed in their unexplainable
+          certitude but those new facts (and more to come) are definitely
+          waiting for new explanations.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Up
+          to now, nobody seems to have clearly described this remarkable
+          behavior. The good idea should be to <b><i>reasonably explain</i></b>
+          the resulting appearance of Relativity without Einstein's absurdities.
+          As a matter of fact, Lorentzian Relativity is still to be elaborated.
+          Lorentz was definitely on the right track but he never went beyond a
+          mere explanation of Bradley's and Michelson's unexpected results and,
+          perhaps, a better description of the transformed particles. What's
+          worse, Henri Poincaré and Einstein ruled out matter contraction and
+          (almost) the aether itself. Fortunately, they were all quite sure that
+          faster then light speeds were impossible.&nbsp;This is not what some
+          supporters of Lorentz's Relativity wrongfully think.</font></p>
+          <p align="left"><b><font size="4" face="Times New Roman">Bradley's
+          aberration of light.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">I
+          also tested successfully the Bradley aberration of light in a
+          moving frame of reference. Then the emitted light waves are undergoing
+          the Doppler effect. Once again, the results are perfectly compatible
+          with the existence of the aether. The hard to detect aether wind was
+          the main problem well before Michelson. Sir Airy, the famous
+          astronomer, was strangely clinging to Fresnel's idea that the wind
+          speed should be proportional to the refraction index for glass or
+          water. His experience using a telescope filled up with water was still
+          a failure. All those phenomena including Michelson's experiment and
+          Bradley's aberration of light seemed totally unexplainable.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Considering
+          the complexity of those phenomena and the lack of tools to check them,
+          the 1900's mess is quite understandable. But I finally obtained
+          flawless proofs that a moving observer always sees his environment as
+          though he were perfectly stationary. Thanks to the virtual medium and
+          my <a href="sa_scanner.html">Time Scanner</a>, I can easily demonstrate
+          that <b><i>apparently</i></b>, all optical phenomena don't change in
+          spite of the Doppler effect, through a now fully acceptable aether.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">And
+          once again, it is on condition that the emitter frequency really slows
+          down and that Lorentz's contraction (especially that of an optical
+          device such as a parabola) takes place only along the direction of
+          motion. Those clips are especially revealing. They clearly show how
+          curved waves undergoing the Doppler effect are reflected on a
+          parabola. They are transformed into plane waves, but they become
+          tilted to the theta angle = arc sin (v/c). Then they are reflected on
+          a plane mirror in such a way that the interference pattern follows the
+          phase wave, whose speed is 1/beta. All along this phase wave,
+          Lorentz's&nbsp; t'&nbsp; "local time" does not change.
+          Finally, the waves return to the parabola, which focuses them into a
+          classical Airy Disk, albeit it is contracted and submitted to the same
+          local time according to the phase wave. It turns out that Lorentz was
+          right. It is a fact. It is undisputable...</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration_Plain.5c.html">Bradley_Aberration_Plain.5c.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration_Plain_Stationary.html">Bradley_Aberration_Plain_Stationary.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          program is here :&nbsp; 
+			<a href="mkv/Bradley_Aberration_Plain.5c-2.html">Bradley_Aberration_Plain.5c.bas</a></span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">The
+          frequency must slow down in order to cancel the transverse wavelength
+          contraction along orthogonal axes y and z. Below, my goal was to show
+          how parallax is still possible in the presence of motion, in spite of
+          the Doppler effect. As a matter of fact, parallax was Bradley's
+          original idea. Opticians know very well that off-axis images obtained
+          by means of a parabolic mirror suffer from coma and astigmatism. They
+          also suffer from spherical aberration if the object distance is
+          finite. In spite of this, parallax detection is still possible. And
+          once again, the parabola must contract to do this accurately. This
+          even includes the distance between two of them!</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration_Parallax.5c.html">Bradley_Aberration_Parallax.5c.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration_Parallax_Stationary.html">Bradley_Aberration_Parallax_Stationary.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Program:&nbsp;
+          	<a href="mkv/Bradley_Aberration_Parallax.html">Bradley_Aberration_Parallax.bas</a></span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">This
+          movie clip especially shows that the two focuses occur at different
+          "local times", which are given by the phase wave and by
+          Lorentz's time equation.</font></p>
+          <p align="left"><b><font size="4" face="Times New Roman">Relativity is
+          not the point.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">We
+          need a practical theory in order to obtain more correct results. We
+          especially have to deal with GPS satellites whose results could be
+          even more accurate. Because the Doppler effect is definitely involved,
+          the Lorentz Transformations cannot be neglected any more.&nbsp;The
+          Doppler effect is present, it is easily measurable, and according to
+          those new results the parabola must contract in order to reflect
+          microwaves correctly.&nbsp; Here, speaking about space and time
+          transformation is totally useless. It is rather a matter of true
+          contraction and slower clocks. After all, only <b><i>our measures</i></b>
+          on Earth are to be preferred; in this particular case we do not have
+          to bother about local space and time. The satellite clocks must
+          definitely indicate Standard Time, not their own slower time. One
+          should avoid synchronizing them using radio signals transmitted from
+          one to another because we know that this procedure ends up with a time
+          shift. It is not a matter of Relativity, it is just a mechanical
+          problem which can easily be solved thanks to the Lorentz
+          transformations.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">&nbsp;Surely,
+          our Earth is not perfectly stationary with respect to the aether.
+          However, one must firstly examine how those phenomena should occur if
+          it was the case. The observer orbiting in a satellite is fully aware
+          of his abnormal situation. Because he knows that his speed simply
+          cannot be zero, he must admit that his emitter is sending waves which
+          are undergoing the Doppler effect. He also knows that this effect is
+          easily detectable on Earth, which is postulated to be stationary. And
+          so, because is is still unable to detect the Doppler effect, <b><i>his
+          only remaining option is to reasonably explain why.</i></b></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">The
+          best way to do that is by means of this fantastic virtual medium which
+          I used to make the video clips available in this page. Scientists
+          working on the GPS system are aware that C compilers are now very fast
+          on a Pentium processor and that today's graphic cards work great.
+          Large arrays of computers working in parallel and even supercomputers
+          are available. Thus, one can experiment those effects in a fast,
+          accurate and effective manner in a very large virtual medium. It is a
+          genuine laboratory despite the fact that it handles virtual waves.</font></p>
+          <p align="left"><b><font size="4" face="Times New Roman">Explaining
+          Relativity.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">About
+          Lorentz's contraction effects, Henri Poincare wrote (Electricity and
+          Optics, 1901) :</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">"This
+          strange property would truly seem a "helpful hand" from
+          Nature to hide from our eyes the absolute motion of the Earth in spite
+          of optical phenomena. This cannot satisfy me..."</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Well,
+          he was wrong. This "strange property" seems indeed a miracle
+          (not to say a conspiracy considering the additional time shift and,
+          thirdly, those slower clocks). It seemed so unlikely that this could
+          occur that Lorentz finally abandoned his original hypothesis, which
+          was still the only reasonable one.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">But
+          today, thanks to this new virtual medium, and also to my 
+			<a href="sa_scanner.html">Time
+          Scanner</a>, it becomes obvious that the orbiting observer is unable
+          to detect his motion. Firstly, the phase wave cancels the Doppler
+          effect. And later, the same phase wave cancels the time shift.
+          Surprisingly, both focal planes appear simultaneous and perfectly
+          symmetrical during a given t' time. This happens because waves
+          traveling backward are faster, so that the information only appears
+          simultaneous. In addition, because he himself is contracted, the
+          observer cannot detect the remaining contraction either.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Now,
+          we can explain why the observer is fooled.</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration_Parallax_Scan.html">Bradley_Aberration_Parallax_Scan.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Program:&nbsp;
+          	<a href="mkv/Bradley_Aberration_Parallax_Scan-2.html">Bradley_Aberration_Parallax_Scan.bas</a></span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Seeing
+          this, one must admit that the relative speed of light is slower
+          forward than backward. The difference seems to cancel the Doppler
+          effect, but there is still a Doppler effect. From this point of view,
+          the Earth being the preferred frame of reference, the speed difference
+          only, not the absolute speed, should be considered. It becomes clear
+          that optical phenomena and even mechanical phenomena still appear
+          identical in the satellite environment. Even length contraction is
+          unnoticeable because the observer is also contracted.</font> <font size="4" face="Times New Roman">This
+          is why the observer orbiting in the satellite is fooled. <b><i>We
+          found the cause.</i></b></font></p>
+          <p align="left"><b><font size="4" face="Times New Roman">Now, let's
+          examine the Bradley aberration of light.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Bradley's
+          goal was to measure the distance to the nearest stars by detecting a
+          parallax effect. The Earth's orbit proved to be a bit too small to do
+          this, but Bradley unexpectedly discovered a different phenomenon.
+          Because the speed of the Earth around the Sun is about 29 km/s, the
+          telescope motion produces a small but measurable focus offset. Bradley
+          soon realized that this effect was a consequence of the speed of
+          light.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Our
+          virtual medium can easily show this. It is quite impossible to set the
+          emitter (which represents a star) several light years away, but a
+          large parabola produces the equivalent plane waves. Then let's add two
+          small parabolas (Bradley's telescope) moving in opposite directions
+          the way they would do around the Sun at 6-month intervals. In this
+          first experience, the Sun is postulated to be perfectly stationary and
+          the telescope speed is exaggerated to 1/3 of the speed of light in
+          order to obtain a more dramatic effect.</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration_Stationary.html">Bradley_Aberration_Stationary.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Program:&nbsp;
+          <a href="mkv/Bradley_Aberration_Stationary-2.html">Bradley_Aberration_Stationary.bas</a></span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">No
+          surprise here: the Airy disk pattern reaches the point where the
+          parabola optical axis was previously. </span>This result is quite
+          simple and understandable. It was a good idea to firstly show what is
+          normally going on, though, because the two parabolas and the wave
+          patterns no longer remain symmetric if the Sun is moving. Today, we
+          know very well that the Sun is orbiting around the galaxy center even
+          faster then the Earth does around the Sun.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">The
+          point is: Bradley did obtain a perfect symmetry. Such a result seemed
+          to indicate that the sun is perfectly stationary with respect to the
+          aether. Surely, the sun
+          motion should rather introduce a severe asymmetry. Here, let's suppose
+          that the Sun is moving at about one half of the speed of light. When
+          both the Sun and the Earth are moving in the same direction, the speed
+          of the Earth is accelerated to .5 + .33 = .83 c. Otherwise, it is
+          rather slowed down to .5 - .33 = .23 c. So the Earth and the parabolas
+          must periodically contract in accordance with Lorentz's shrinking
+          factor. However, in order to reproduce the same 1/3 c velocity as
+          above, as seen by the moving observer, one must refer to Poincare's
+          law of speed addition, which is given by:</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">beta''
+          = (beta + beta') / (1 + beta * beta')</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">It
+          turns out that the slowest and fastest composite speed should be .2
+          and .7143 c. Then the contraction difference is severe: 98% vs. 70%.
+          Obtaining a symmetric result using those differently contracted
+          parabolas now appears unlikely to be possible, especially in the
+          presence of the additional Doppler effect. Poincare's 1901 theory
+          ("optical phenomena are relative") was attractive because it
+          was much simpler and apparently correct. I am quite sure that Lorentz
+          did figure out such a scenario because Bradley and Michelson had
+          severely damaged Newton's system. He had to abandon his hypothesis,
+          for he was a great scientist. <b><i>It simply could not work.</i></b></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration.5c.html">Bradley_Aberration.5c.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Program:&nbsp;
+          	<a href="mkv/Bradley_Aberration.5c-2.html">Bradley_Aberration.5c.bas</a></span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">But
+          surprisingly, the video below shows that <b><i>it does work!</i></b>
+          Using my Time Scanner, which transforms a Doppler distorted
+          environment the way a moving observer should see it, it becomes
+          obvious that a perfect symmetry is still possible.</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration.5c_Scan.html">Bradley_Aberration.5c_Scan.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Program:&nbsp;
+          	<a href="mkv/Bradley_Aberration.5c_Scan-2.html">Bradley_Aberration.5c_Scan.bas</a></span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">This
+          is certainly the most amazing phenomenon ever. I did not doubt that
+          when I initiated the video series because I know a lot about the
+          Lorentz transformations and the Doppler effect. Writing so complicated
+          programs was not a piece of cake, but&nbsp; I finally succeeded in
+          showing that Lorentz's theory definitely works great!</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><b><i>Lorentz's
+          triumph is now complete</i></b>. No doubt, this is the ultimate
+          experiment. In the future, it will be repeated and improved to a high
+          degree of perfection, and it will always yield the same fantastic
+          results.</font></p>
+          <p align="left"><b><font size="4" face="Times New Roman">Lorentzian
+          Relativity.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">This
+          leads to Lorentz's Relativity. Consequently, Special Relativity is
+          deadly wounded. Einstein's version (actually that of Poincare) was
+          indeed attractive because it yielded correct predictions. No doubt, it
+          was valuable, but now we need to know why all this is possible. We
+          need to know how matter works. The basic principle is that any moving
+          system still mechanically works perfectly on condition that those
+          strange effects take place. Because of them, the moving observer
+          cannot be aware of his motion any more. He still see things in his
+          environment as though he were perfectly at rest.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">So
+          it was important to elaborate the correct equation set&nbsp; for this,
+          as Lorentz's purpose was rather to cancel the Doppler effect on
+          Maxwell's equations in a moving frame of reference. <b><i>Surprisingly,
+          Lorentz's x' and t' variables applied to the stationary system</i></b>.
+          This is weird. Knowing this, I just swapped them and easily obtained
+          the equation set below many years ago:</font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p align="center"><img src="sa_experiences_files/lorentz03f.gif" width="321" border="0" height="144"></p>
+          <p align="center"><font size="4" face="Times New Roman">The Lorentz
+          Transformations.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">This modified
+          set is fully consistent with Lorentz's point of view.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Let's
+          make things perfectly clear: Lorentzian Relativity simply cannot be
+          explained without those equations. They <b><i>must</i></b> be adopted
+          by any scientist who is interested in Lorentz's works, even though
+          Lorentz neglected to put them down this way.&nbsp;Secondly, I
+          demonstrated a long time ago that those equations also produce
+			<a href="sa_Doppler.html">Lorentz's
+          slower Doppler effect</a>. In this case, x variables stand for axial
+          distances in wavelengths and t variables stand for the wave period,
+          hence in 2*pi units. And thirdly, this is highly consistent with my 
+			<a href="sa_scanner.html">Time
+          Scanner</a>. Three independent and spectacular confirmations of the
+          same facts cannot be a coincidence. The Lorentz Transformations are
+          definitely a law of nature, and they are all about matter mechanics.
+          Clearly, they will lead us well beyond Relativity.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Fortunately,
+          in this form, Lorentz's equations become quite easy to understand. One
+          must bear in mind that all x and x' variables stand for absolute
+          distances in light seconds, so that c = 1. On the contrary, while only
+          t variables stand for absolute seconds, Lorentz carefully explained
+          that t' variables do not indicate the "true time". They only
+          indicate slower seconds that clocks in this moving frame of reference
+          should display. Suppose that velocity is 50% of the speed of light,
+          hence beta = 0.5 and Lorentz's contraction factor is: g = 0.866. And
+          finally, x = 1 and a one second delay (t = 1) occurred.</font></p>
+          <p align="left"><font size="4" face="Times New Roman">1. g * x&nbsp;
+          means that matter and distances contract to 86.6% of their original
+          length along the direction of motion in accordance with Lorentz's
+          contraction factor.</font></p>
+          <p align="left"><font size="4" face="Times New Roman">2. beta * t&nbsp;
+          means that matter simply moves to x' = 0.5 * 1 = 0.5 light second
+          after a one second delay according to its speed. This is Galileo's
+          Relativity Principle. However, because the coordinate was shifted to
+          x'=0.866 after the contraction occurred, the final x' position is
+          0.866+0.5= 1.366 light second.</font></p>
+          <p align="left"><font size="4" face="Times New Roman">3. g * t means
+          that moving clocks tick 86.6% slower, once again according to
+          Lorentz's contraction factor. More exactly, the electron frequency and
+          that of any cyclic mechanical process slows down. This is why the
+          transverse wavelength, hence transverse distances, remains constant
+          according to Lorentz's y'=y; z'=z.&nbsp;</font></p>
+          <p align="left"><font size="4" face="Times New Roman">4. <span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>beta * x means
+          that a clock whose original position was x = 1 (but whose position is
+          currently x' =1.366 light second) indicates minus 0.5 second as
+          compared to another clock whose original position was x = 0 (but whose
+          position is currently x' =0.5 light second).</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">This
+          time shift is important because, in this frame of reference, the
+          relative speed of light is three times faster backward (1+beta=1.5)
+          than forward (1<span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>beta=0.5). As a
+          consequence, and additionally because the contraction is unnoticeable
+          as well, the clock synchronization procedure using light or radio
+          signals perfectly matches this anomaly. It should be emphasized that
+          this is not only a mere time shift. Cause and effect relationships are
+          undergoing the same Doppler distortion, simply because causes are
+          transmitted by waves. Thus, speaking about space and time
+          transformation is meaningless and useless. One should rather consider
+          that this appearance of simultaneity leads to an amazing but
+          understandable mystification: the moving observer cannot detect his
+          true speed through the aether any more.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">This
+          time shift can also be cross-checked by means of the phase wave, where
+          Lorentz's t' time remains the same. It is where transverse waves
+          incoming from opposite directions meet, given the fact that they
+          are tilted to an angle which is given by: arc sin (v/c). The result is
+          a scissor effect. Because of this constant but "moving" t'
+          time, two observers A and B placed on the displacement axis will think
+          that the wave front crosses this axis at the same time. So it will
+          seem parallel to it, not tilted. I invented my
+			<a href="sa_scanner.html">Time
+          Scanner</a> thanks to this phenomenon. The phase wave is well visible
+          in the <span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Bradley_Aberration_Parallax.5c.html">Bradley_Aberration_Parallax.5c.mkv</a>
+          clip above. In any event, </span>I made another video clip in order
+          to show this in a more dramatic manner. It shows how waves behave in a
+          moving confocal and symmetric twin-parabola system, which is a very
+          rarely shown in optical or radio apparatus. Here, the phase wave is
+          visible two times, firstly for plane but tilted waves, then for moving
+          circular standing waves (please observe that they look very much like
+          my moving electron, but in 2-D only).</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+			<a href="mkv/Phase_Wave.html">Phase_Wave.mkv</a></span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">FreeBasic
+          program:&nbsp; 
+			<a href="mkv/Phase_Wave-2.html">Phase_Wave.bas</a></span></font></p>
+          <p align="left"><b><font size="4" face="Times New Roman">Poincare's
+          Relativity Postulate.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">So,
+          let's return to the very beginning of this story. In 1904, Henri
+          Poincaré made a lecture to the International Congress of Arts and
+          Science in St-Louis, Missouri, USA. No doubt that Albert Einstein was
+          well aware of what he said:</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><i>"The
+          laws of physical phenomena must be the same, whether for an observer
+          fixed, or for an observer carried along in a uniform movement of
+          translation, so that we have not or cannot have any means of
+          discerning whether or not we are carried along in such a motion."</i></font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <div align="center">
+            <center>
+            <table width="750" border="4" cellpadding="20" cellspacing="6">
+              <tbody><tr>
+                <td>
+                  <p align="center"><font size="4" face="Times New Roman">Those
+                  are flawless proofs that actually, in the presence of motion,
+                  optical phenomena remain surprisingly natural and consistent
+                  on condition that the Lorentz Transformations apply to matter
+                  the same way the Doppler effect applies to waves responsible
+                  for matter mechanics. That is why the observer "cannot
+                  have any means of discerning whether or not we are carried
+                  along in such a motion".</font>
+                  </p><p align="center"><font size="4" face="Times New Roman">The
+                  point is: most certainly, the observer <b><i>is</i></b>
+                  moving, and matter <b><i>does</i></b> contract. We are now
+                  aware that this phenomena is possible in the presence of the
+                  aether. On the contrary, nobody ever explained how such a
+                  wonder could be possible without the aether. Let's face it:
+                  the idea that one's motion with respect to another material
+                  body is purely relative was attractive, partly because its
+                  basic principles were simple, and obviously because its
+                  predictions were correct. Unfortunately, it must be rejected
+                  because it is unreasonable and misleading. It is a severe
+                  obstacle to understanding things. In physics, even a correct
+                  prediction is unsatisfactory. The ultimate goal is to <b><i>explain</i></b>
+                  things.</font></p></td>
+              </tr>
+            </tbody></table>
+            </center>
+          </div>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">This
+          site is very popular and it becomes more and more discussed. Thanks to
+          my efforts, things are about to change. A lot of new sites whose
+          subject is "Lorentzian Relativity" (check
+			<a href="http://www.google.fr/search?hl=fr&amp;q=%22Lorentzian+Relativity%22&amp;btnG=Recherche+Google&amp;meta=lr=&amp;aq=f&amp;oq=">Google</a>)
+          are available. This is quite a revolution. Thus, if one still prefers
+          to rely on Einstein's weird principles and paradoxes, making all those
+          new results still compatible with his version of the theory will soon
+          become unsustainable.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">I
+          admit that Einstein's predictions are correct (clearly, Relativity is
+          true), but his interpretation of what is really going on is not.</font></p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+        
+<font size="4" face="Times New Roman">
+
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				32 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Relativistic_Big_Bang.html">The Relativistic Big 
+					Bang </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_phaseshift.html">The Electron Phase Shift </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_mechanics.html">The Wave Mechanics </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_fields.html">Fields of Force </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_gravity.html">Gravity </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_quarks.html">Quarks </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_atoms.html">Atoms </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					Proofs and Experiences </b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+        
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        <font size="4" face="Times New Roman"><center>
+        <p align="left"></p></center>Gabriel LaFreniere<p></p>
+        <p align="left">Bois-des-Filion in Québec.</p>
+        <p align="left">Email&nbsp; <a href="notice.html">Please read this
+        notice.</a></p>
+        </font><p align="left"><font size="4" face="Times New Roman">On the Internet since September 2002. Last update
+        December 3, 2009.</font></p></td>
+    </tr>
+  </tbody></table>
+</div>
+<p>&nbsp;</p>
+        
+</font>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- sa_experiences.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:48:46 GMT -->
+</html>

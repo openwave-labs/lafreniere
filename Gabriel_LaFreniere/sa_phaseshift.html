@@ -1,0 +1,1215 @@
+<html>
+<!-- sa_phaseshift.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:25:53 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-gb">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="description" content="Explanation of matter and physic laws by standing waves.">
+<meta name="keywords" content="physics, matter, standing waves, gravity, Relativity, Lorentz transformation, electron, atom, light, Doppler effect, fields, electricity, magnetism">
+<title>The Electron Phase Shift</title>
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></font><!-- BEGIN WAYBACK TOOLBAR INSERT --><script type="text/javascript" src="sa_phaseshift_files/disclaim-element.js"></script><script type="text/javascript" src="sa_phaseshift_files/graph-calc.js"></script><script type="text/javascript" src="sa_phaseshift_files/jquery.html"></script><script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "sa_phaseshift.html\/\/glafreniere.com\/sa_phaseshift.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "янв";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script><style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style><script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script><!-- END WAYBACK TOOLBAR INSERT --></p>
+
+
+<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<font style="font-size: 9pt">13<span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font size="6" face="Times New Roman">THE&nbsp; ELECTRON&nbsp;
+PHASE&nbsp; SHIFT</font></p>
+
+<p align="center"><img src="sa_phaseshift_files/huygens00.gif" width="547" border="0" height="281"></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/phaseshift05.gif" width="337" border="0" height="142"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">The lambda / 2 phase
+shift.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The lambda spaced lines
+on the wave peaks switch
+to valleys on the right.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        electron phase shift had to be explained carefully because it modifies
+        seriously the way matter acts and reacts. Actually, this stunning
+        phenomenon allows one to explain why the action and reaction law holds
+        true. It is all about Matter Mechanics.</font> 
+        
+        </p>
+        
+        <p align="left"><b><font size="4" face="Times New Roman">The full
+        wavelength electron core.</font></b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">In
+        July 2003, I found Mr. Milo Wolff's web site. I noticed that the core in
+        the center of his electron was a
+        full wavelength in diameter. I immediately wrote a computer program in order
+        to check this and I soon found that the core for spherical standing
+        waves should indeed be a full lambda wide as shown above.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">This
+        was also very clearly demonstrated by</font> <font size="4" face="Times New Roman">Mr.
+        Jocelyn Marcotte thanks to his optimized 3-D Virtual Medium. Mr. Marcotte
+        also showed that any spherical incoming Gaussian impulse
+        simply reproduces the same normal distribution pattern in the center.
+        Surprisingly, the well known two peaks "Ricker wavelet" (which
+        is used
+        for studying earthquakes -and not named after "Richter") as a convergent
+        spherical system produces the same Gaussian distribution pattern in the
+        center.&nbsp;</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">In
+        addition, the electron amplification is caused by a lens effect. The
+        resulting energy
+        is extracted from aether waves and it is permanently radiated all around. This leads us to
+        four important points:</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">1
+        - The electron is a <b><i>pulsating wave center</i></b>. Electrons constantly radiate energy.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">2
+        - The electron is a finite system. In my opinion its standing waves
+        progressively fade out and do
+        not expand significantly outside a one meter radius sphere, and possibly
+        much less.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">3
+        - Spherical standing waves <b><i>are not</i></b> made out of 
+in-waves
+        and out-waves. This is indeed a very useful and effective method
+ for
+        displaying standing waves. However, this point of view 
+absolutely does not
+        correspond to what is really going on. Any standing wave node is
+ a zero
+        energy point where no energy can pass through. The medium 
+substance simply moves back and forth inside a lambda / 2 space, and 
+this
+        phenomenon obeys Hooke's law.&nbsp;</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">4
+        - The electron is made of spherical standing waves which are 
+superimposed on outgoing traveling waves whose amplitude is nil
+        at the center. The result is not well
+        known as <b><i>partially standing waves</i></b>. I made the animation
+        below in order to show that standing waves can slowly transform into traveling
+        waves, with a transitional partially standing wave state between them :</font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/proton08.gif" border="0"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">The electron is a
+pulsation wave center because its standing waves progressively transform to regular traveling waves.</font></p>
+<p align="center"><font size="4" face="Times New Roman">The emitted energy is
+borrowed from all aether waves traveling in the vicinity because of a lens effect.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Now,
+        let us suppose that two electrons are very close together. Then only
+        pure standing waves, not partially standing waves, are present. It
+        becomes obvious that the wave addition, especially along the axis
+        joining them, may vary.</font></p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">As
+        a matter of fact, adding or removing just a half-wavelength to the
+        distance produces opposite effects which are clearly visible in the
+        diagrams below.</font>
+        
+      </p></td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/phaseshift02.jpg" width="500" border="0" height="150"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">Intermediate on-axis waves cancel,
+but the rest add constructively </font><font size="4" face="Times New Roman"> beyond
+both electrons.</font></p>
+<p align="center"><font size="4" face="Times New Roman">The external radiation
+pressure produces an
+attraction effect.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/phaseshift03.jpg" width="500" border="0" height="150"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">Here, the distance is .5
+wavelength shorter and the result is rather a repulsion effect.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Intermediate waves add
+constructively but they rather cancel beyond both electrons.</font></p>
+<p align="center"><font size="4" face="Times New Roman">So there should be an
+equilibrium point for a .25 wavelength distance difference.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        important point is that, if the election core was only a half-lambda
+        wide, this opposite effect would be absent. Waves would add
+        constructively or destructively everywhere.</font> 
+        
+        </p>
+        
+        <p align="left"><b><font size="4" face="Times New Roman">The capture
+        phenomenon.</font></b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Assuming
+        that axial standing waves are amplified, they radiate energy towards
+        both sides. In the upper diagram situation, there is an inward radiation
+        pressure only and both
+        electrons are pushed towards each other. On the contrary, they are rather repelled
+        in the lower diagram. It becomes obvious that there is an equilibrium point
+        in-between, and as long as the particles are not moving very fast with
+        respect to each other, they must be captured in this position. The
+        electron or positron pair then becomes a quark. It is truly a <b><i>Wave
+        Structure</i></b>, and it is responsible for neutrons, protons, and all
+        other more or less stable particles.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman"> Excessive
+        vibrations may destroy the resulting particle, though, and there is
+        surely a privileged distance where this clamping effect is likely to
+        occur. Please note this appears to be a gluonic field. It is not an electrostatic field because the
+        electron standing waves are involved. Electrostatic forces are rather
+        the result of the addition of progressive spherical waves emitted by electrons or
+        positrons.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman"> Because energy is the square of amplitude, which is doubled
+        there, this area basically contains four times more energy than that of
+        one electron. What is more, those
+        standing waves are also amplified by aether waves in the
+        same manner as electrons alone are, and the resulting energy becomes additional mass.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Finally,
+        the gluonic field mass is much greater than that of one electron. It
+        becomes clear that the electron pair which is responsible for the whole
+        quark including the gluonic field becomes almost invisible. In addition,
+        the resulting frequency is no longer that of the electron. So the
+        electrostatic forces cannot work any more, but there is still some place
+        for some other sort of spin, which is known to be fractional.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Most
+        of the proton mass, which is 1836 times that of one
+        electron, is located inside gluonic fields. They are very strong fields
+        of force. The neutron contains only three
+        quarks, each quark being made of two
+        electrons and/or positrons only, but there is most probably an
+        additional positron hidden in the middle of the proton.</font> 
+        
+        </p>
+        
+        <p align="left"><b><font size="4" face="Times New Roman">The hydrogen
+        atom.</font></b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">However,
+        the wave addition works quite differently for the electron-positron
+        pair. Assuming that the proton is a neutron containing a positron, this
+        is the case for the the hydrogen atom whose nucleus is one proton only.
+        In such a case, there is a pi/2 phase offset and the wave addition
+        produces the stunning on-axis unidirectional radiation, which is
+        responsible for magnetic fields.</font> 
+        
+        </p>
+        
+        <p align="center"><img src="sa_phaseshift_files/proton10.gif" border="0"></p>
+        <p align="center"><font size="4" face="Times New Roman">The electron in
+        the presence of a proton generates this unidirectional radiation.</font></p>
+        <p align="center"><font size="4" face="Times New Roman">The wave
+        direction is reversed for opposite spin and also for any lambda/2
+        distance difference.</font></p>
+        <p align="center"><font size="4" face="Times New Roman">This phenomenon
+        is the origin of magnetic north and south poles.</font></p>
+        <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+        
+        <p align="left"><b><font size="4" face="Times New Roman">Mr. Milo Wolff's
+        onion layers.</font></b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">My
+        own calculations using both the Huygens Principle and Mr. Wolff's "onion
+        layers" comparison (each layer internal radius is that of the
+        precedent external radius, and the layer thickness is a half-wavelength) lead me to the diagram
+        below.</font> <font size="4" face="Times New Roman">The formulas were given
+        by Mr. Jocelyn Marcotte in 2006.</font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><font size="4" face="Times New Roman">
+<img src="sa_phaseshift_files/amplitude00.gif" width="700" border="0" height="343">&nbsp;</font></p>
+<p align="center"><font size="4" face="Times New Roman">The electron standing wave amplitude.</font></p>
+<p align="center"><font size="4" face="Times New Roman">This is no longer true for very long
+distances, where amplitude is nil.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <p align="left"><b><font size="4" face="Times New Roman">Mr. Milo Wolff's
+        phase shift.</font></b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Those
+        calculations were very satisfactory and all seemed O.K. More similar schemes can
+        also
+        be found on the Internet and may have been elaborated hundreds of years ago. However,
+        Mr. Milo Wolff suggested that this wave system could be an electron.&nbsp;</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Mr.
+        Wolff also spoke about a "phase shift". He invoked it in order
+        to justify the electron spin. </font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">However,
+        I do not agree. In my picture, the electron and positron spin
+        is the result of a phase difference, which is well visible in the
+        animated diagram below:</font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/electrons01a.gif" width="404" border="0" height="367"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">The electron spin.</font> 
+        
+</p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        <span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:AR-SA">–</span>1/2
+        and +1/2 spins are opposite, yet they both belong to the electron. The electron
+        vs. positron phase <b><i>is
+        not</i></b>  opposite, there is rather a pi / 2 difference only. Thus, there is no need to invoke a phase shift in order
+        to explain spin.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Such a phase
+        shift seemed to me a quite useless and weird idea. However my computer programs could easily
+        reveal phases. So I begun investigating inside the electron core and I
+        found... a phase shift!</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        phase shift is clearly visible below:</font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/phaseshift05.gif" width="337" border="0" height="142"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;The lambda /
+2 phase shift.</font></p>
+<p align="center"><img src="sa_phaseshift_files/huygens00.gif" width="547" border="0" height="281"></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;The leftward and
+rightward wave addition produces the standard electron.</font></p>
+<p align="center"><font size="4" face="Times New Roman">One could also say
+in-waves and out-waves, but both interpretations are wrong from my point of view.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        <p align="left"><b><font size="4" face="Times New Roman">Faster than the
+        speed of light.</font></b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Clearly,
+        the wave <b><i>accelerates</i></b> inside the spherical central antinode.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Since
+        the beginning I always thought that the waves <b><i>mean speed</i></b>
+        was constant whether the aether was filled with high energy
+        waves or not. For this reason the speed of light is a constant. It is
+        absolute.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">However, the speed of sound, for
+        example, is faster at sea level then at high altitude. The temperature
+        being constant, the sound waves are faster where the air pressure is
+        higher.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">From
+        Mr. Wolff's "onion
+        layers" point of view, the
+        spherical wave amplitude should be linked to each layer volume:&nbsp; </font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center">&nbsp;&nbsp;&nbsp;</p>
+<p align="center"><img src="sa_phaseshift_files/phaseshift06.jpg" width="390" border="0" height="284"></p>
+<p align="center"><font size="4" face="Times New Roman">Surprisingly, the first onion layer
+volume is exactly seven (7) times that of the electron core.</font></p>
+<p align="center"><font size="4" face="Times New Roman">The sine wave energy
+distribution inside each layer leads to the equivalent sin(x)/x equation.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Clearly,
+        as soon as they are penetrating the internal sphere, incoming waves
+        have to deal with a seven times smaller volume (please bear in mind that
+        this is only the mathematical point of view) where the medium
+        compression is very high. But the important point is that the medium is
+        compressed on a full lambda distance, allowing an unusual faster wave
+        speed there.&nbsp;</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The acceleration inside the core is also clearly visible on this
+        animation :</font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/airy180.gif" border="0"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;Here, the
+Huygens' wavelets come from the surface of just one hemisphere, that on the left
+hand side.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/milowave.gif" width="201" border="0" height="151"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">Both
+hemispheres simply reproduce the unmoving electron.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <p align="left"><b><font size="4" face="Times New Roman">The radiation
+        pressure.</font></b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">It
+        becomes clear that any convergent hemispheric wave must move faster than the
+        speed of light inside the core or focus point. Such a situation may be
+        seen as the
+        result of millions of Huygens' wavelets incoming
+        from the inner surface of only one hemisphere. However, <b><i>this does not occur</i></b>
+        inside a static, unmoving electron because both hemispheres
+        theoretically produce waves traveling in opposite directions.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">This
+        strongly suggests to me that when the wave amplitude is not equal from
+        both sides, the electron central antinode must be <b><i>pushed</i></b>
+        away. This motion produces a slight Doppler effect, and it becomes more
+        and more significant until the unequal amplitude situation stops. The
+        result is my Doppler moving
+        electron:</font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_phaseshift_files/matiere00d.gif" width="200" border="0" height="150"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;The Doppler moving
+electron.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Each spherical wave
+center of curvature stays at rest inside aether.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">This
+        animation shows the electron while it is moving at half of the speed of
+        light (beta = .5). Then the Doppler wave amplitude ratio equals:</font> 
+        
+        </p>
+        
+        <p align="center"><font size="4" face="Times New Roman">(l <span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:AR-SA">– </span></font><font size="4" face="Symbol"><span style="font-size: 14.0pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR; mso-fareast-language: FR; mso-bidi-language: AR-SA">b</span></font><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:AR-SA"><font size="4" face="Times New Roman">)
+        / (1 + </font></span><font size="4" face="Symbol"><span style="font-size: 14.0pt; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR; mso-fareast-language: FR; mso-bidi-language: AR-SA">b</span></font><span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:AR-SA"><font size="4" face="Times New Roman">)
+        = 3</font></span></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        forward amplitude is 3 while it is 1 backward. The difference (3
+        <span style="font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:FR;mso-fareast-language:FR;mso-bidi-language:AR-SA">–</span>
+        1 = 2) indicates that the electron core is constantly pushed forward
+        by half of the speed of light. This is a very plausible explanation for <b><i>inertia</i></b>.
+        Any moving electron cannot change its speed unless a change in forward
+        or backward wave amplitude occurs.
+        </font> 
+        
+        </p>
+        
+        <p align="left"><b><font size="4" face="Times New Roman">The "Wave
+        Structure of Matter".</font></b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">So
+        far as I know, <a href="http://members.tripod.com/mwolff/">Mr. Milo Wolff</a>
+        first proposed this spherical standing wave as the basic unit for
+        matter.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">He
+        told us that the electron and the positron were the same particle.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">He
+        discovered the important lambda / 2 phase shift.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">He
+        showed that the mass increase was related to the Doppler effect.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">He also demonstrated that
+        despite the fact that they may be seen as a point,
+        electrons are actually present inside a rather large space. Thus, a wave
+        interaction becomes possible in such a way that a given number of electrons
+        and positrons are not isolated any more. On the contrary, they can form a structure: a Wave
+        Structure. Obviously, speaking about the <b><i>Wave Structure of Matter</i></b>
+        is the next highly relevant step, but unfortunately Mr. Wolff and most
+        of his disciples united under this banner were strangely silent on this.
+        As a matter of fact, they never proposed any wave structure.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">I
+        am very disappointed that so many people were wrongly led into some sort
+        of mystic sect. Frankly, philosophy is not the appropriate tool. This is
+        weird.&nbsp;</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        most brilliant exception was Mrs. 
+		<a href="http://freespace.virgin.net/ch.thompson1/">Caroline
+H. Thompson</a>, who asked the correct question: <b><i>What is matter?</i></b>
+        She did propose a "Wave Structure" in the form of a tetrahedron; my own
+        researches did not lead to this hypothesis but it is still possible. She also
+        pointed out that many of Mr. Wolff's ideas were somewhat evanescent. She
+        proposed her own wave theory. She was very convinced that many of
+        today's well accepted ideas such as photons, misunderstood quantum
+        effects, the non existence of the aether, Einstein's Relativity, etc.,
+        had to be reviewed. She realized that because of this, the scientific
+        world was led on a blind alley. I also think that many of today's assumptions in physics
+		<a href="sa_errors.html">are definitely false</a>.&nbsp;&nbsp; </font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Mrs.
+        Caroline Thompson was a very clever person, perhaps the most clever
+        woman ever.&nbsp; </font> 
+        
+        </p>
+        
+        <p align="left"><b><font size="4" face="Times New Roman">More Pioneers.</font></b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">I
+        strongly believe that Lorentz was right. His Relativity is true and
+        complete. Space and time are distinct and absolute. Einstein's Special Relativity seems to be true but
+        the postulates are not. Especially, the speed of light <b><i>is not</i></b>
+ the same in all frames
+        of reference. Einstein also misled us for 100 years about 
+photons and gravity. His ideas about space-time contraction and/or 
+curvature are
+        ridiculous. </font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">I
+        also agree with <a href="http://ondes-relativite.info/">Mr. Serge
+        Cabala's</a> ideas. The <b><i>piston machine</i></b> on his home page is
+        very interesting. It shows how the Lorentz transformations act on matter.
+        In my opinion this pioneer should be remembered as the first person on
+        this planet who discovered (around 1970) that matter is purely made out of
+        waves. He postulated that aether should exist, and he also showed that
+        Relativity is consistent with the aether.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">
+		<a href="http://www.keelynet.com/spider/b-104e.htm">Mr.
+        Yuri Ivanov</a>  discovered in 1990 that standing waves undergo a
+        contraction according to Michelson's calculations. This is of the utmost
+        importance. As far as I know, nobody else was aware of this before him.
+        What is more, he showed that matter using standing waves as bonding forces should also contract for
+        this reason, and that this could explain Michelson's null result and Relativity.
+        Unfortunately, he clearly did not
+        understand well Lorentz's time equation, and he finally ended up
+        with too severe a contraction.</font> 
+        
+        </p>
+        
+        <p align="left"><b><font size="4" face="Times New Roman">The true cause.</font></b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">On
+        July 10, 2006, Mr. Jocelyn Marcotte succeeded in experimenting the
+        moving and unmoving electron thanks to his own 3-D Virtual Medium. It was a great achievement.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        point is that Mr. Marcotte's experiment also clearly demonstrated that,
+        near to the electron center, the first spherical node is one wavelength
+        wide in diameter instead of the normal lambda / 2 length between two
+        successive nodes. Inside the inner spherical node, the additional
+        distance for a theoretical incoming and then outgoing wave is half of a
+        wavelength, which finally causes the lambda / 2 phase shift. But this is
+        only the mathematical point of view.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">From
+        a <b><i>mechanical</i></b> point of view, though, the first spherical
+        node is totally an obstacle to any wave displacement. Clearly, no energy
+        can pass through it because a standing wave node is a constant zero
+        energy zone. So, a more reasonable hypothesis should
+        be that waves are simply bouncing back and forth between the first and the second
+        spherical node, whose radius is extended to an additional lambda / 4
+        length as compared to a theoretical node right at the center.</font></p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">This
+        is the true cause of the electron phase shift.</font></p>
+        <p align="left"><b><font size="4" face="Times New Roman">More proofs.</font></b></p>
+        <font size="4" face="Times New Roman">
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Please
+          download this program on the Wave Mechanics:</p>
+          <p align="center"><a href="programs/WaveMechanics05.html">WaveMechanics05.bas</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="programs/WaveMechanics05-2.html">WaveMechanics05.exe</a></p>
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">This
+          program was intended to show how waves behave in the vicinity of
+          reflectors such as parabolic, elliptic, corner, straight and even
+          three-sided. I am quite sure that this sort of program, which is
+          easily upgradeable, will soon become a must for opticians,
+          acousticians, and radio-electricians. However, I managed to start the program on the elliptic
+          configuration for both the emitter and receiver. In addition, both
+          sections are
+          joined together into a full elliptic reflector.</p>
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">It
+          is a well known fact that the ellipse main property is that the
+          distance from one focal point to any point of the ellipse and then to
+          the second focal point is rigorously constant. This apparently
+          unavoidable property led mathematicians to postulate that circular (or
+          spherical for the ellipsoid reflector) waves emitted at the first
+          focal point should reach the second focal point without any
+          distortion.</p>
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Well,
+          this proves to be absolutely false, and one must admit that equations
+          for this are not reliable. It is all about <b><i>amplitude</i></b>,
+          not phase. Because amplitude is clearly higher on the left hand side,
+          the central antinode at the second focal point is not circular any
+          more. It is rather elliptic, and the result is an equivalent node and
+          antinode offset. In addition, the characteristic "partially
+          standing wave" behavior is easily recognizable (see
+			<a href="sa_plane.html">Plane
+          Standing Waves</a>) as a longitudinal motion which is also observable
+          in the animation shown above (Airy180.gif).</p>
+          <p align="left"><b>Regular waves can influence standing waves.</b></p>
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">This
+          behavior applies to the moving electron and the phase shift calculus
+          then becomes much more complex. Finally, the same behavior also explains
+          radiation pressure as well as inertia.</p>
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">Until
+          some organization realizes that this most important phenomenon
+          should be experimented by means of a physical device, using air, water
+          or solid homogenous substance such as quartz, the only experiment
+          available now needs Philippe Delmotte's and Jocelyn Marcotte's virtual
+          medium, which is a virtual but still highly dependable laboratory. The goal
+          is to show that traveling waves penetrating a circular or spherical
+          standing wave system will introduce some changes. It is important
+          to test this experimentally.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Besides
+        Mr. Marcotte's experiment, this
+        phenomenon is indeed easily verifiable inside air or water by means of a large
+        number of loudspeakers regularly spaced on the internal surface of a sphere.
+        This will produce wavelets
+        in accordance with the Huygens Principle, and whose addition generates a
+        unique incoming spherical wave front. 
+        
+        </p>
+        
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">The
+          important point is that traveling waves definitely influence standing
+          waves. Two electrons pulsating spherical waves all around will surely
+          influence each other. Clearly, this explains the action and reaction
+          law, and the whole matter mechanics becomes possible thanks to the
+          radiation pressure.</p>
+          <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">This
+          flawless demonstration is a very strong argument in favor of the wave
+          nature of matter.&nbsp;</p>
+        </font>
+        <p align="left"><b><font size="4" face="Times New Roman">The electron
+        phase shift and the Wave Mechanics.</font></b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        electron phase shift is of the utmost importance because it leads to some totally different
+        Wave Mechanics. Magnetic, electrostatic and gluonic fields are
+        especially involved.&nbsp;Now that the electron additional lambda / 2 wavelength
+        inside its central core is well established, action and reaction through fields of force
+        can finally be explained.</font> 
+        
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Now,
+        we can understand why Newton's laws hold true.</font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<font style="font-size: 9pt">13<span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Relativistic_Big_Bang.html">The Relativistic Big 
+					Bang </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					The Electron Phase Shift 
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_mechanics.html">The Wave Mechanics </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_fields.html">Fields of Force </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_gravity.html">Gravity </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_quarks.html">Quarks </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_atoms.html">Atoms </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_experiences.html">Proofs and Experiences </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+
+<p align="center">&nbsp;</p>
+
+  <font size="4" face="Times New Roman">
+  </font>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <font size="4" face="Times New Roman">
+        
+        <center>
+
+        <p align="left"></p></center>
+        
+        Gabriel LaFreniere<p></p>
+        
+        <p align="left">Bois-des-Filion in Québec.</p>
+        
+        <p align="left">Email&nbsp; <a href="notice.html">Please read this notice.</a></p>
+        </font><p align="left"><font size="4" face="Times New Roman"> On the Internet since September
+        2002. Last update December 3, 2009.</font></p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- sa_phaseshift.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:27:01 GMT -->
+</html>

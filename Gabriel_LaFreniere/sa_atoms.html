@@ -1,0 +1,535 @@
+<html>
+<!-- sa_atoms.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:42:10 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>The Atom</title>
+<meta name="description" content="Explanation of matter and physic laws by standing waves.">
+<meta name="keywords" content="physics, matter, standing waves, gravity, Relativity, Lorentz transformation, electron, atom, light, Doppler effect, fields, electricity, magnetism">
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></font><!-- BEGIN WAYBACK TOOLBAR INSERT --><script type="text/javascript" src="sa_atoms_files/disclaim-element.js"></script><script type="text/javascript" src="sa_atoms_files/graph-calc.js"></script><script type="text/javascript" src="sa_atoms_files/jquery.html"></script><script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "sa_atoms.html\/\/glafreniere.com\/sa_atoms.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "янв";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script><style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style><script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script><!-- END WAYBACK TOOLBAR INSERT --></p>
+
+
+<font face="Arial" size="4">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span>26<span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font size="6" face="Times New Roman">ATOMS</font></p>
+
+<p align="center"><img src="sa_atoms_files/atome01.gif" width="347" border="0" height="312"></p>
+
+<p align="center"><font size="4" face="Times New Roman">The oxygen atom.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">Here, two shade cones are
+empty.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">However, four cones may
+be empty as well because two electrons may be positioned inside the inner
+shell.&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The empty cones can capture
+two or four electrons from other atoms such as hydrogen or carbon.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center">&nbsp;&nbsp;&nbsp;</p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <center>
+        
+        <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+
+        wave structure explains a lot of phenomena, such as 
+photoelectric
+        effects, chemical bonding, electric current, semiconductors, 
+etc. It shows that a proton radiates most of its energy along the
+        15 gluonic fields axes. This leaves 8 axes free from any 
+radiation
+        between them, producing 8 "shade cones" which look like
+        this:</p>
+ </font>
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<p align="center"><img src="sa_atoms_files/proton12.gif" width="403" border="0" height="448"></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;The shade cones
+are capable of capturing up to 8 electrons on the external atomic layer.</font></p>
+<p align="center"><font size="4" face="Times New Roman">One or more electron can join
+two such systems while at least two cones coincide.</font></p>
+<p align="center"><font size="4" face="Times New Roman">This explains chemical
+bonding.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <center>
+        
+        <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>Chemistry.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">A
+        better knowledge of the proton wave diagram will certainly facilitate
+        chemistry.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Because
+        of the Bohr atom model scientists had always thought that the electrons
+        were rotating around the nucleus. The "electron clouds" from
+        quantum mechanics had not modified this in a convincing way.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">But
+        today one can easily locate the appropriate places where the involved electrons
+        should try to be. There is an obvious attraction effect
+        between two ionized atoms, one positive and the other negative. The
+        electron from the negative one will certainly try to fill one of the
+        opposite and empty "black funnels". Then the two funnels
+        involved will lock themselves together in order to be as close as
+        possible as a reaction effect.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Because
+        those funnels are aligned on the 8 corners of a cube, up to 4
+        connections can be used in the same binding. This
+        should make very strong molecules and crystalline structures. Moreover,
+        there are other electrons inside the inner shells and smaller atoms may
+        use those inner shells as well. It is a well known fact that lighter
+        elements such as hydrogen, chlorine, sodium, carbon and oxygen are
+        especially active.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">It
+        seems obvious that inside molecules, the electron spin must alternate
+        from one atom to another on the same axis. Otherwise a magnetic field
+        would appear. This strongly indicates that any chemical reaction can be
+        facilitated but it will be difficult to choose and alternate the
+        correct spin.&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">So
+        the goal is to find the places where those electrons are most likely to
+        fit. It should be very easy to construct complex molecules this
+        way.&nbsp;</p>
+        <p align="left"><b>More to come.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Today
+        I dare say that most of the puzzle pieces have been put together.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        page will contain a lot of new information about the atom.</p>
+ </font>
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><img src="sa_atoms_files/underconstruction.jpg" width="300" border="0" height="234"></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<font size="4" face="Times New Roman">
+
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span>26<span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Relativistic_Big_Bang.html">The Relativistic Big 
+					Bang </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_phaseshift.html">The Electron Phase Shift </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_mechanics.html">The Wave Mechanics </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_fields.html">Fields of Force </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_gravity.html">Gravity </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_quarks.html">Quarks </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					Atoms </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_experiences.html">Proofs and Experiences </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+
+</font>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <font size="4" face="Times New Roman"><center>
+        <p align="left"></p></center>Gabriel LaFreniere<p></p>
+        <p align="left">Bois-des-Filion in Québec.</p>
+        <p align="left">Email&nbsp; <a href="notice.html">Please
+        read this notice.</a></p>
+        </font><p align="left"><font size="4" face="Times New Roman">On the Internet since September 2002. Last update
+        December 3, 2009.</font>
+        
+      </p></td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	</font>
+</blockquote>
+
+</body>
+<!-- sa_atoms.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:42:45 GMT -->
+</html>

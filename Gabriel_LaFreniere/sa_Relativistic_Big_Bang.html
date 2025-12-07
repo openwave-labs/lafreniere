@@ -1,0 +1,837 @@
+<html>
+<!-- sa_Relativistic_Big_Bang.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:24:48 GMT -->
+<head>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>The Relativistic Big Bang.</title>
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></p>
+</font><font face="Arial" size="4">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				12 | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font size="6" face="Times New Roman"><span style="letter-spacing: 1">THE
+RELATIVISTIC BIG BANG</span></font></p>
+
+      <font size="4" face="Times New Roman">
+        
+<p align="center"><img src="sa_Relativistic_Big_Bang_files/Big_Bang_03_Multiple_Doppler.jpg" border="0"></p>
+
+<p align="center">The redshift of remote galaxies is relativistic.</p>
+        
+<p align="center">In this image, the constant transverse wavelength according to Lorentz's equations: y' = y; z' =
+z, is well
+observable .</p>
+        
+<p align="center">In addition to the regular Doppler effect, the frequency
+slows down according to Lorentz's time equation.</p>
+        
+<p align="center">Because of the Lorentz transformations, observer B wrongly
+considers that he is at the center of the Universe.</p>
+        
+<p align="center">In his view, he is stationary so that A and C are apparently
+moving away from him at the same distance and speed.</p>
+        
+      </font>
+        
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+        
+<p align="center"><font size="4" face="Times New Roman"><b>
+RELATIVITY</b></font></p>
+        
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="100%">
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">There
+          are many reasons why Relativity holds true. The absence of transverse
+          contraction according to Lorentz's discovery is definitely the most
+          important one. Such a result, which is the main characteristic of the
+          Relativistic Doppler effect, implies a slower pulsation rate according
+          to Lorentz's time equation. The well-known Lorentz-FitzGerald
+          longitudinal contraction and Lorentz's "local time" are also
+          of the utmost importance when it comes to explaining Relativity.</span></font></p>
+          <p align="left"><font size="4" face="Times New Roman"><b>The Alpha
+          Transformations.</b></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          problem is that the Lorentz Transformations are misleading. They must
+          be applied to a moving system because the x' and t' variables refer to
+          stationary one. Instead of space and time units, the variables should
+          rather be given in wavelength and phase units. In addition, Voigt, Lorentz,
+          Poincare, and Larmor had to elaborate complicated demonstrations using
+          Maxwell's equations. As a matter of fact, Lorentz himself wrote in
+          1920 that less than 10 physicists in the whole world were able to
+          explain Relativity. Today, it is even worse, and that is why most
+          astronomers no longer rely on elementary Relativity in order to
+          understand the Big Bang and the expansion of the Universe.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Fortunately,
+          I could elaborate a more practical equation set which applies to 
+			<a href="sa_plane.html">Ivanov's
+          standing waves</a>. Because it may be applied to sound waves with
+          similar results, the use of
+          Maxwell's equations is no longer relevant. I called this equation set
+          the Alpha transformations because it is the very basis of matter
+          mechanics, which is known to be the Wave Mechanics since Louis de
+          Broglie. Although they primarily reflect the behavior of standing
+          waves, their reversed form is surprisingly very similar to the
+          original Lorentz
+          transformations, which apply to matter.</span></font></p>
+          <p align="center"><img src="sa_Relativistic_Big_Bang_files/Alpha_Transformations_Equations.html" border="0"></p>
+          <p align="center"><font size="4" face="Times New Roman">The Alpha
+          Transformations.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          Alpha Transformations do reproduce Ivanov's standing waves in a moving
+          environment. But they may also be reproduced using the usual
+          wave addition method because, at least theoretically, it is the superimposition of
+          two waves trains traveling in opposite direction and whose wavelength
+          differ. Ivanov's waves may also be reproduced using my
+			<a href="http://web.archive.org/web/20110711100427/http:/www.glafreniere.com/sa_scanner.htm">Time
+          Scanner</a><a href="http://web.archive.org/web/20110711100427/http://www.glafreniere.com/sa_scanner.htm">, </a>the Delmotte-Marcotte
+          virtual wave medium, or an acoustic device made out of a microphone
+          and two distant loudspeakers in the presence of wind. Because all five
+          methods yield the same results, the behavior of this fascinating
+          phenomenon is not disputable.</span></font></p>
+
+<div align="center">
+  <center>
+  <table border="2" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><img src="sa_Relativistic_Big_Bang_files/Ivanov_Standing_Waves.gif" border="0"></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+          <p align="center"><font size="4" face="Times New Roman">Ivanov's
+          waves.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">At
+          first glance, this phenomenon might not look that important. However,
+          it can be shown that it is closely related to the Lorentz
+          Transformations. The node and antinode structure is moving at the
+          "alpha" speed in the direction of the shorter waves so that
+          its intrinsic energy is also moving at the alpha speed. Especially, as
+          it was explained above, this system exhibits a slower pulsation rate
+          and a longitudinal contraction with respect to the wavelength
+          geometrical mean. What's more, because of the presence
+          of a stunning phase wave, a series of clocks regulated according to
+          the local phase would obviously display Lorentz's "local
+          time". Such effects are indeed identical to those of the Lorentz
+          Transformations.</span></font></p>
+          <p align="left"><font size="4" face="Times New Roman"><b>The Lorentz
+          Transformations apply to all galaxies in the Universe.</b></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          point is that today's astronomers do not believe that remote galaxies
+          are undergoing the Lorentz transformations. In their picture, because
+          the Universe is expanding, galaxies are practically stationary with
+          respect to the local "space fabric". This is known as the
+          "raisin pudding model". Thus, even though we are surely not
+          in the center of the Universe, we are still observing that all
+          galaxies around us are receding according to Hubble's law.&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">This interpretation of the Big Bang is incorrect,
+          though, because Relativity always holds true. It does not tolerate any
+          exception. Astronomers are aware that today's instruments and
+          methods are amazingly accurate, so that relativistic speeds are no
+          longer necessary in order to verify it. Especially, the speed of a
+          moving space ship as measured from another one is verifiable using a
+          Doppler radar. Hence, they must realize that some new crucial
+          experiences are already possible. They should examine more carefully
+          the Relativistic Big Bang hypothesis, simply because it will soon be
+          verified.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          expanding Universe is relativistic. That is, very distant and fast
+          galaxies are undergoing the Lorentz transformations. They are emitting
+          radio waves, light, X-rays and gamma rays according to a slower rate
+          of time, and that is why the resulting Doppler effect is relativistic.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">Rearward
+          relativistic Doppler:&nbsp; lambda' = lambda * (1 + beta) / g</font></p>
+          <p align="center"><font size="4" face="Times New Roman">Relativistic
+          redshift:&nbsp; R = (1 + beta) / g</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">According
+          to Relativity, even the most distant galaxies cannot reach the speed of
+          light. Hence, a redshift of 2 or more cannot indicate that the speed
+          of a galaxy is faster than the speed of light. For this reason, it is
+          not acceptable to deal with a so-called "z" redshift, which
+          is given by the wavelength ratio minus 1 in order to indicate the beta
+          (or v / c) speed. Using the more acceptable redshift R shown above,
+          the galaxy normalized speed is given by:</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">beta = 2 / ((1
+          / R)^2 + 1) <span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">–</span>
+          1</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The most distant galaxies
+          are also severely contracted according to the Lorentz-Fitzgerald
+          contraction. This includes distances between them. As a result, the cosmic
+          sphere seems to contain far more galaxies near its limits than in its
+          central area.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">In
+          the graphics below, seven galaxies (A to G) are placed and transformed
+          according to the Lorentz transformations. This way, any of them may be
+          considered to be stationary in the center of the universe, and the two
+          neighboring galaxies seem to move away at the same distance and at the
+          same alpha speed.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></font></p>
+          <p align="center">
+			<img src="sa_Relativistic_Big_Bang_files/cosmic_sphere.jpg" border="0" width="617" height="616"></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          Cosmic Sphere.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">In
+          this example, the beta speed is 0.5 for C and the alpha intermediate speed
+          is 0.2679 for B.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">As
+          seen from the center A, the more the galaxies are distant and fast,
+          the more they are contracted.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">But
+          surprisingly, observer B also observes that he is stationary and that
+          all galaxies are moving away from him.&nbsp;</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">This
+          happens because he is moving towards the waves incoming from the
+          right.&nbsp;</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          result of this is that his perception of the time (his "local
+          time") is distorted.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          Time Scanner is capable of reproducing the equivalent distortion.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="avi/Big_Bang_02_Doppler_Lorentz_Scan.html">Big_Bang_02_Doppler_Lorentz_Scan.avi</a></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The FreeBasic program:&nbsp; </span>
+			<a href="avi/Big_Bang_02_Doppler_Lorentz_Scan-2.html">Big_Bang_02_Doppler_Lorentz_Scan.bas</a></font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p align="left"><font size="4" face="Times New Roman"><b>The Alpha
+          suite.</b></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Most
+          of the time, the
+          Doppler effect is the cause of the forward vs. rearward
+          wavelength difference. Christian Doppler himself pointed out in
+          1842 that this difference is unnoticeable if the observer is moving
+          along with the transmitter. In this case, Ivanov's waves are moving at
+          the same speed. The video below shows that this fundamental result is
+          consistent with both the acoustic and relativistic Doppler effect.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="mkv/Standing_Waves_06_Doppler.html">Standing_Waves_06_Doppler.mkv</a></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">However,
+          in the case of the relativistic Doppler effect, the slower frequency
+          must be taken into account, and the result of this is that the Doppler
+          effect seems to be relative. It is no longer possible to deduce one's
+          absolute speed from it because of the amazing symmetry. This may easily be demonstrated using an
+          "Alpha Suite", that is, any suite based on a constant alpha reference speed.
+          The suite must be calculated according to Poincare's law of speed addition:</span></font></p>
+        <font size="4" face="Times New Roman">
+  <p align="center"><span style="mso-fareast-font-family: MS Mincho">beta
+          = (alpha + alpha) / </span>(1 + alpha * alpha)</p>
+        
+  <p align="center"><span style="mso-fareast-font-family: MS Mincho">beta'
+          = (alpha + beta) / </span>(1 + alpha * beta)</p>
+        
+        <p align="center"><span style="mso-fareast-font-family: MS Mincho">beta''
+          = (alpha + beta') / </span>(1 + <span style="mso-fareast-font-family: MS Mincho">alpha </span> * beta')</p>
+        
+      </font>
+        
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">For
+          example, let's suppose that observer A below is stationary and that
+          observer C is moving at beta = 0.5 times the speed of light. According
+          to Poincare, the observer B must move at an intermediate alpha speed in
+          order to see both A and C moving away from him at the same alpha
+          speed.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          alpha speed is given by:</span></font></p>
+        <font size="4" face="Times New Roman">
+      <div align="center">
+        <table border="4" bordercolor="#000000" cellpadding="0" cellspacing="6">
+          <tbody><tr>
+            <td>
+        <font size="4" face="Times New Roman">
+        <img src="sa_Relativistic_Big_Bang_files/alpha.gif" width="151" border="0" height="80">
+        
+      </font>
+        
+            </td>
+          </tr>
+        </tbody></table>
+      </div>
+        
+        <p align="center"><span style="mso-fareast-font-family: MS Mincho">Or
+        more simply:&nbsp; alpha&nbsp;
+          =&nbsp; </span>(1 <span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">–</span>
+          g) / beta</p>
+        <p align="center"><span style="mso-fareast-font-family: MS Mincho">alpha&nbsp;
+          =&nbsp; </span>(1 <span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">–</span>
+        0.866025) / 0.5 = 0.267949</p>
+        </font><p align="center"><font size="4" face="Times New Roman">And inversely:&nbsp;</font> <font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">beta
+          = (alpha + alpha) / </span>(1 + alpha * alpha) = 0.5</font></p><font size="4" face="Times New Roman">
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+      <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho">Thus,
+      in the graphics below, A is stationary, B is moving at 0.267949 c and C is moving at 0.5 c. This
+  situation is remarkable because B may consider that A and C are moving away
+  from him at the alpha speed. </span>But the situation of D is even more
+  remarkable because his observations are exactly identical to
+  those of B. This is the most stunning effect of Relativity: any speed seems to
+      be relative so that the absolute speed cannot be recorded any more.</p>
+        
+      </font>
+        
+          <p align="center">
+			<img src="sa_Relativistic_Big_Bang_files/Big_Bang_05_Apparent_Wavelength.gif" width="748" border="0" height="611"></p>
+          <p align="center"><font size="4" face="Times New Roman">This
+          "theorem" is based on Ivanov's waves.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">It shows that
+          the situation of observers B and D is equivalent.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">Their absolute
+          motion is undetectable because they are recording the same data.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">The redshift
+          from their two neighbors seems identical: R = 1.316074 times the
+          regular
+          wavelength.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">The measured
+          redshift apparently indicates the alpha speed = 2 / ((1 / 1.316074)^2 +
+          1) <span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">–</span>
+          1 = 0.267949</font></p>
+          <p align="center"><font size="4" face="Times New Roman">This occurs
+          because the measures of D are far more distorted as a result of the
+          Lorentz-FitzGerald contraction.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">The animation
+          below proves that, using the Hertz test, observer B measures identical
+          wavelengths from A and C.&nbsp;</font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="mkv/Standing_Waves_05_Alpha.html">Standing_Waves_05_Alpha.mkv</a></font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p align="left"><font size="4" face="Times New Roman"><b>The Lorentz
+          Tri-Dimensional Transformations.</b></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">On
+          a transverse axis, the expansion of the Universe produces a contraction which is
+          incompatible with Lorentz's y' = y; z' = z equations. It is negligible
+          at any scale smaller than that of our galaxy, yet it is
+          unavoidable here because the goal is to show how the Universe is
+          expanding.</span></font></p>
+          <p align="center">
+			<img src="sa_Relativistic_Big_Bang_files/cosmic_sphere_02.jpg" border="0" width="623" height="618"></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">At
+          the scale of the Universe, the Lorentz Transformations produce a
+          transverse contraction.&nbsp;</span></font></p>
+          <p align="center"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">On
+          April 30, 2010, I released a tri-dimensional version of the Lorentz Transformations
+          (see below).</font></span></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Using
+          this equation set, it is now possible to show the "Big Bang"
+          and the expansion of the Universe:</span><span style="color:navy"><o:p></o:p>
+          </span></font></p>
+          <p class="MsoNormal" align="center"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">
+			<a href="mkv/Cosmic_Sphere.html">Cosmic_Sphere.mkv</a></font></span></p>
+          <p class="MsoNormal" align="center"><span style="color:navy"><font size="4" face="Times New Roman">
+			<a href="mkv/Big_Bang_01_Relativistic.html">Big_Bang_01_Relativistic.mkv</a>
+          </font></span></p>
+          <p class="MsoNormal" align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          program:&nbsp; </span><a href="programs/Big_Bang_01_Relativistic.html">Big_Bang_01_Relativistic.bas</a></font></p>
+          <p class="MsoNormal" align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">It
+          turns out that the x axis is a preferred one, where Lorentz's t' phase (or time)
+          applies and where the Lorentz-FitzGerald contraction takes place using
+          Lorentz's original contraction factor. The y axis is involving a secondary
+          level of transformation as seen by the observer moving on the x axis.
+          Similarly, the transformation on the z axis is a tertiary one as seen
+          by an observer moving on both x and y axes. Thus, the all-azimuth
+          transformations shown below are asymmetric. Fortunately, it is possible
+          to bypass this constraint by accelerating the speed according
+          to beta[y] / g[x] or beta[z] / g[y] in order to obtain symmetrical
+          results, for example if the goal is to obtain a 45° direction. Of
+          course, it is also possible to elaborate a different equation set in order to obtain
+          symmetrical results, but this option proves to
+          be far more complicated. It also leads to speeds faster than light,
+          hence inconsistent with Relativity.</font></span></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">On
+          the positive side, this equation set is consistent with Poincare's law
+          of speed addition. For instance, a beta speed of 0.9999 on all three x, y
+          and z axes still produces a resulting beta[xyz] speed slower than
+          the speed of light. This leads to a new law of speed composition: g<sub>xyz</sub>
+          = g<sub>x</sub> * g<sub>y</sub> * g<sub>z</sub></font></span><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">
+          .&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">Below are the Lorentz all-Azimuth Transformations:</font></span></p>
+          <div align="center">
+            <center>
+            <table border="5" cellpadding="0">
+              <tbody><tr>
+                <td width="100%">
+                  <img src="sa_Relativistic_Big_Bang_files/Lorentz_all_azimuth.jpg" border="0">
+                </td>
+              </tr>
+            </tbody></table>
+            </center>
+          </div>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          Lorentz all-Azimuth tri-Dimensional Transformations.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          formula:&nbsp; g<sub>xyz</sub> = g<sub>x</sub> * g<sub>y</sub> * g<sub>z</sub>&nbsp;
+          introduces a new law of relativistic speed composition.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Henri
+          Poincare is the author of a similar law on relativistic speed
+          addition.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">In
+          May and June 2009, I worked hard in order to re-arrange and simplify
+          this equation set. Now, it is quite nice. Even the de Broglie's phase
+          wave is reproducible using it. Using the Delmotte-Marcotte wave
+          medium, I could check that those transformations work perfectly,
+          especially when it comes to reproducing the relativistic Doppler
+          effect.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">I
+          also succeeded in transforming Lorentz himself. Now, that's what I
+          call the Lorentz "transformations"!</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="mkv/Lorentz_3D_Transformations.html">Lorentz_3D_Transformations.mkv</a></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">The
+          contraction especially is well visible. The goal was actually to show
+          that the phase wave is linked to the contraction (an ellipse is needed
+          instead of a circle). This way, the phase wave and the relativistic
+          Doppler effect are perfectly superimposed.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="mkv/Phase_Wave_2.html">Phase_Wave_2.mkv</a></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">The
+          all-azimuth transformations are a must in order to transform
+          simultaneously several structures or wave emitters whose direction is
+          not the same. In the animations suggested here, one may check that the
+          transformations are perfectly achieved.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">What's
+          even better is their effect on a transmitter. In addition to the
+          contraction, the pulsation phase is slowed down and it is modified in
+          order to mach the phase wave. It should be emphasized that the Time
+          Scanner reproduces the same effects using only the phase wave and the
+          alpha speed. According to the animations below, the phase wave may
+          be interpreted in different ways.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="mkv/Big_Bang_04_Phase_Wave.html">Big_Bang_04_Phase_Wave.mkv</a></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="mkv/Phase_Wave.html">Phase_Wave.mkv</a></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">I
+          very carefully reproduced the relativistic Doppler effect near to the
+          center of the transmitter. After all, it is the main purpose of the
+          Lorentz Transformations.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="avi/Relativistic_Doppler.html">Relativistic_Doppler.avi</a></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="avi/Relativistic_Doppler-2.html">Relativistic_Doppler.bas</a></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">Similarly,
+          below is the most recent representation of my moving electron, which
+          was obtained by means of the all-azimuth transformations. It was
+          firstly shown in my 2002 book: "Matter is made of waves".
+          Here, it is moving along a diagonal. Mr. Jocelyn Marcotte pointed out
+          that its structure may be given by the sinus cardinalis: y = sin(x) /
+          x.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="avi/Doppler_Moving_Electron_Diagonal.html">Doppler_Moving_Electron_Diagonal.avi</a></font></p>
+          <p align="center"><font size="4" face="Times New Roman">
+			<a href="avi/Doppler_Moving_Electron_Diagonal-2.html">Doppler_Moving_Electron_Diagonal.bas</a></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">All
+          this indicates that any moving material system is undergoing three
+          fundamental transformations:</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">1
+          – The system experiences a contraction on the displacement axis
+          according to Lorentz's factor.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">2
+          – Events in this system are occurring at a slower rate of time according to Lorentz's
+          factor.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">3
+          – Events at the rear of this system are occurring sooner according
+          to Lorentz's time equation.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></font></p>
+          <p align="left"><font size="4" face="Times New Roman"><b>The Universe
+          is likely to be expanding regularly.</b></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">It
+          was shown above that any expansion phenomenon must be relativistic. It
+          is not possible to measure some consistent data in the presence of
+          three A, B, C space ships regularly spaced without respecting the
+          alpha speed of the central one. For example, speeds such as 0.0000001
+          c for A, 0.0000002 c for B and 0.0000003 c for C would definitely lead
+          to an asymmetry because their initial equal distance will soon become
+          unequal and measurable as such by both A and C.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">In
+          short, the relativistic expansion is verifiable and measurable. What's
+          more, it is consistent with Relativity. Thus, I am of an opinion that
+          rejecting the relativistic hypothesis is highly imprudent, if not
+          illogic.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">That
+          is why Mr. Saul Perlmutter cannot deduce from his discovery that the
+          Universe is expanding in an accelerated manner. It was even more
+          imprudent to put forward the "dark energy" hypothesis in
+          order to explain it. I do recognize the importance of his discovery,
+          but it must definitely be interpreted as a confirmation that the
+          expansion of the Universe is relativistic.&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;The
+          curves below are correct on condition that the Hubble constant is
+          really constant, which is still to be demonstrated. So, let's
+          suppose it is constant. In addition, one must realize that, if the
+          expansion of the Universe is relativistic, the speed of light is
+          unattainable. This is why the purple curve strongly deviates from the
+          blue one when it approaches c. But surprisingly, although the well-known regular
+          brightness (green curve) of a supernova differs if it is
+          relativistic (red curve), the difference is rather small.</span></font></p>
+          <p align="center"><img src="sa_Relativistic_Big_Bang_files/Supernova_Relativistic_Brightness.jpg" border="0"></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">The
+          important point is that the difference matches Mr. Perlmutter's
+          observations. This result indicates that the expansion of the Universe
+          is relativistic. It doesn't indicate that the expansion is
+          accelerated. I am quite sure that this trend will be confirmed in
+          many years from now, as more and more observations on very distant and
+          fast supernovae will be available.</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></font></p>
+          <p align="left"><font size="4" face="Times New Roman"><b>The Expansion
+          of the Aether.</b></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          aether itself may be expanding as a result of its elasticity. In this
+          case, one should admit that very distant galaxies may be receding much
+          faster than the speed of light. What's more, considering that they
+          should be stationary with respect to the local aether, the Lorentz
+          Transformations would not apply. And finally, because all galaxies
+          would be accelerated thanks to the aether elasticity, this property
+          would definitely account for a so-called "dark
+          energy".&nbsp;&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">This
+          picture is strangely similar to what astronomers believe today.
+          However, such an expansion must be still compatible with Relativity.
+          Otherwise, it would be measurable in an absolute way so that the
+          center of the Universe would become verifiable. The answer to this
+          ultimate question is well beyond our reach today because there are so
+          many variables and hypotheses. Especially, a severe redshift is difficult to measure
+          because the radiation energy is dimming proportionally. Considering
+          the distance, even X-rays are
+          becoming very faint if they are shifted into infrared.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Considering
+          that they are moving at nearly the speed of light, fastest galaxies
+          are supposed to be seen about 13.5 billion light-years away. But
+          today, because the light had to travel during 13.5 billion years, they
+          may be actually about 27 billion light-years away. One should
+          nevertheless be aware that such a distortion as a result of the light
+          traveling delay must imperatively be perceived as a space contraction
+          which partially accounts for the Lorentz-FitzGerald contraction. In
+          addition, though, because the aether is expanding at the speed of
+          light, the light emitted toward us by those galaxies is no longer
+          capable of reaching our telescopes.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">On
+          the one hand, galaxies receding faster than the speed of light would
+          become totally invisible. On the other hand, galaxies receding at
+          nearly the speed of light would exhibit a severe redshift because, in
+          this area, the speed of light with respect to us is very slow. Hence,
+          their actual distance would be far greater than 27 billion light-years
+          away. That is why the result is finally comparable to that of a pure
+          relativistic Big Bang, albeit it is not perfectly identical.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;All
+          this is highly hypothetical. However,
+          we are still capable of building larger telescopes. I strongly think
+          that, in the future, and whatever the direction, we will observe more
+          and more galaxies very near to the limits of the Cosmic Sphere. This
+          will definitely indicate that the center of the Universe is
+          unverifiable and that the expansion of the Universe is </span><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">–</span>
+          <span style="mso-fareast-font-family: MS Mincho"> or seems </span><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">–</span>
+          <span style="mso-fareast-font-family: MS Mincho"> relativistic.</span></font></p>
+   </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<font size="4" face="Times New Roman">
+
+<p align="center">&nbsp;</p>
+
+<div align="center">
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				12 | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					The Relativistic Big 
+					Bang </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_phaseshift.html">The Electron Phase Shift </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_mechanics.html">The Wave Mechanics </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_fields.html">Fields of Force </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_gravity.html">Gravity </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_quarks.html">Quarks </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_atoms.html">Atoms </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_experiences.html">Proofs and Experiences </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+  <p align="center">&nbsp;</p>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        <font size="4" face="Times New Roman">
+        
+          <p align="left">Gabriel LaFreniere,</p>
+          <p align="left">Bois-des-Filion in Québec.</p>
+          <p align="left">Email: <a href="notice.html">Please
+        read this notice.</a></p>
+          </font><p align="left"><font size="4" face="Times New Roman">On the Internet since
+        September 2002. Last update March 11, 2011.
+        
+        </font> 
+        
+        </p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+        
+          <p align="center"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></p>
+        
+<p align="center">&nbsp;&nbsp; </p>
+
+</font>
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- sa_Relativistic_Big_Bang.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:25:53 GMT -->
+</html>

@@ -1,0 +1,1058 @@
+<html>
+<!-- sa_mechanics.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:27:01 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Wave Mechanics</title>
+<meta name="description" content="Explanation of matter and physic laws by standing waves.">
+<meta name="keywords" content="physics, matter, standing waves, gravity, Relativity, Lorentz transformation, electron, atom, light, Doppler effect, fields, electricity, magnetism">
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></font><!-- BEGIN WAYBACK TOOLBAR INSERT --><script type="text/javascript" src="sa_mechanics_files/disclaim-element.js"></script><script type="text/javascript" src="sa_mechanics_files/graph-calc.js"></script><script type="text/javascript" src="sa_mechanics_files/jquery.html"></script><script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "sa_mechanics.html\/\/glafreniere.com\/sa_mechanics.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "29";
+var displayMonth = "окт";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script><style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style><script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script><!-- END WAYBACK TOOLBAR INSERT --></p>
+
+
+<font face="Arial" size="4">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span>14<span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font size="6" face="Times New Roman">THE&nbsp; WAVE&nbsp;
+MECHANICS</font></p>
+
+<p align="center"><img src="sa_mechanics_files/masse_active02.gif" border="0"></p>
+
+<p align="center"><img src="sa_mechanics_files/masse_active03.gif" border="0"></p>
+
+        <font size="4" face="Times New Roman">
+        <p align="center">Action and reaction is certainly one of Newton's most
+        important laws.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <div align="center">
+          <center>
+          <table width="700" border="4" cellpadding="20" cellspacing="6">
+            <tbody><tr>
+              <td>
+                <p align="center"><font size="4" face="Times New Roman">We may
+                have to elaborate a still hardly conceivable New Mechanics where
+                the speed of light is unattainable because inertia increases
+                with velocity.</font></p></td>
+            </tr>
+          </tbody></table>
+          </center>
+        </div>
+        <p align="center">Henri Poincare's "New Mechanics".</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>Matter Mechanics.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Louis
+        de Broglie rightfully proposed that matter mechanics should be called
+        "The Wave Mechanics". But scientists
+        usually prefer <b><i>quantum mechanics</i></b> because of Planck's constant.
+        Even though this constant is useful, the wave properties are far more important.&nbsp;</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">I
+        am of an opinion that Newton's laws are still highly relevant on
+        condition that the law of Relativity is invoked. This occurs because, as
+        Christian Doppler himself discovered, a moving observer cannot perceive the
+        Doppler effect in his environment. Newton's laws need some minor
+        adjustments, though, because Poincare was right: the speed of light is
+        unattainable. Furthermore, in 1904, Poincaré also said in St-Louis,
+        USA:</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">
+        
+        "The laws of physical phenomena are the same, whether for an observer
+        fixed, or for an observer carried along in a uniform movement of
+        translation, so that we have not or cannot have any means of
+        discerning whether or not we are carried along in such a motion."</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Einstein
+        proposed the postulate below in his 1905 first edition of his Theory of
+        Relativity. It is clearly similar to Poincaré's:</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><span lang="FR-CA">"The
+        same laws of electrodynamics and optics will be valid for all frames of
+        reference for which the equations of mechanics hold good."</span>&nbsp;</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Newton's
+        laws are definitely wrong from an absolute point of view, though. They
+        should be replaced by Lorentz's laws based on the Lorentz
+        transformations, which are definitely and absolutely true because it is
+        how the Doppler effect transforms matter. The goal is to examine what is
+        really going on. The point is that, from a mechanical and absolute point
+        of view, the aether is the only admissible frame of reference. Any
+        moving wave system must still be represented under the same space and
+        time coordinates. Because any moving wave system undergoes the Doppler
+        effect, the Lorentz additional mass, which is kinetic energy as a result
+        of the wave contraction, must also be imperatively evaluated in the same
+        unmoving frame of reference.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Then
+        action and reaction especially prove to be frankly unequal. I found that
+		<a href="sa_active.html">Active and Reactive Mass</a> based on the
+        Doppler effect are highly useful in order to evaluate active and
+        reactive forces. The same calculus also indicates how forces will act in
+        a fast moving systems and proves that Newton's laws are no longer valid.</p>
+        
+        <p align="left"><b>Matter is made of waves.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">We
+        know since Louis de Broglie that matter particles exhibit wave
+        properties.
+        Indisputably, matter works by means or waves. Let us
+        make it perfectly clear : there is no alternative. At this stage, it is
+        not an assumption, it is a certainty.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Additionally,
+        the electron is not a metal marble covered in chrome. It cannot be made of matter. It is rather matter
+        which is made of
+        electrons.&nbsp;So, let us postulate that the electron is a standing
+        wave system. Furthermore, these waves cannot be plane. They should be
+        spherical.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">So,
+        when two electrons come very close together, the wave addition must lead
+        to the diagrams below:</p>
+        
+ </font>
+
+        </td>
+    </tr>
+  </tbody></table>
+</div>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p align="center">
+        
+        <img src="sa_mechanics_files/lumiere03.gif" width="300" border="0" height="205">
+        </p>
+        <p align="center">
+        
+        Note
+        the concentric ellipsoids compatible with hyperboloids.
+
+          </p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><font size="4" face="Times New Roman"><img src="sa_mechanics_files/lumiere04.gif" width="381" border="0" height="205">
+ </font>
+
+      </p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_mechanics_files/electronelectron00.gif" width="638" border="0" height="179"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">Distance: 10
+wavelengths.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Waves add constructively
+between two electrons but they rather add destructively beyond them.</font></p>
+<p align="center">Then the central field of force should produce a repulsion
+effect.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_mechanics_files/electronelectron00a.gif" width="638" border="0" height="179"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+        <p align="center">In this diagram, a half-wavelength was added to the
+        distance.</p>
+        <p align="center">Then two opposite fields of force should rather push
+        both particles towards each other.</p>
+        <p align="center">A capture phenomenon becomes possible because there is
+        an equilibrium point in-between.&nbsp;</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+
+        <div align="center">
+          <center>
+          <table border="4" cellpadding="0" cellspacing="6">
+            <tbody><tr>
+              <td>
+                <p align="center"><img src="sa_mechanics_files/electronpositron00.gif" width="638" border="0" height="179"></p></td>
+            </tr>
+          </tbody></table>
+          </center>
+        </div>
+        <p align="center">One-way waves along the axis joining one electron and
+        one proton are responsible
+        for magnetic fields.</p>
+        <p align="center">The wave direction is reversed for opposite spin and
+        also for any lambda/2 distance difference.</p>
+        <p align="center">This phenomenon is the origin of magnetic north and
+        south poles.</p>
+          </font>
+
+        <font size="4" face="Times New Roman">
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+          </font>
+
+<p align="center"><b><font size="4" face="Times New Roman">UNIFYING&nbsp;
+ALL&nbsp; FORCES</font></b></p>
+
+<font size="4" face="Times New Roman">
+        <div align="center">
+          <center>
+          <table width="90%" border="4" cellpadding="20" cellspacing="6">
+            <tbody><tr>
+              <td>
+                <p align="center">
+        
+        <font size="4" face="Times New Roman"> <b><i>All forces</i></b>
+        are transmitted by waves at the speed of light.</font></p><p align="center">
+        
+        <font size="4" face="Times New Roman"> Waves emitted by two material
+        bodies add constructively between them and produce a field of force.</font></p><p align="center"><font size="4" face="Times New Roman">The
+                field of force exerts a radiation pressure on both sides and the
+                result is opposite motion.</font></p></td>
+            </tr>
+          </tbody></table>
+          </center>
+        </div>
+        
+        </font>
+        
+<p align="center"><b><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></b></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <p align="left"><font size="4" face="Times New Roman"><b>The Radiation Pressure.</b></font></p><font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"> John Poynting
+        showed that the light exerts a radiation pressure. Actually, not just
+        the light. All waves propagating through the aether, whose speed is also
+        the speed of light, can more or less&nbsp; "push"
+        matter. The pressure mechanism is not that simple, though, because
+        aether waves are carrying very few energy as compared to
+        that of the electron central antinode.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        whole wave addition, which produces standing waves, must rather be
+        considered. For example, two electrons or positrons emitting all azimuth
+        spherical
+        waves should produce the characteristic standing wave set below.</p>
+        
+        <div align="center">
+          <center>
+          <table border="4" cellpadding="0" cellspacing="6">
+            <tbody><tr>
+              <td>
+                <p align="center"><font size="4" face="Times New Roman"><img src="sa_mechanics_files/champbiconvexe01.gif" border="0">
+        
+        </font>
+        
+              </p></td>
+            </tr>
+          </tbody></table>
+          </center>
+        </div>
+        <p align="center">The electrostatic field of force.</p>
+        <p align="center">It may be called "biconvex" because only
+        curved waves are adding constructively.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <div align="center">
+          <center>
+          <table border="4" cellpadding="0" cellspacing="6">
+            <tbody><tr>
+              <td>
+                <p align="center"><img src="sa_mechanics_files/diffractive01.gif" border="0"></p></td>
+            </tr>
+          </tbody></table>
+          </center>
+        </div>
+        <p align="center">The cross section is similar to the diffractive
+        (or zonal) lens.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Because
+        the field of force may be seen as thousands of stacked lenses focusing
+        towards both electrons, one should indeed expect a strong lens effect
+        from it. But from an optical point of view, those lenses definitely
+        cannot work because the concentric zones are moving away from the
+        center. The phase rotation cancels the focusing effect.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Fortunately,
+        the electron works very much like a stroboscope. This well known device
+        can immobilize any rotating system, and it is also true in the case of a
+        phase
+        rotation. The electron is indeed a perfect stroboscope because its
+        standing waves periodically appear everywhere simultaneously, and then disappear. And
+        because a significant part of the electrostatic field is located inside
+        both electrons, this should activate the field of force amplification in
+        such a way that some of the radiated energy is finally transmitted directly
+        towards both electrons. Then the phase coincides and the radiation
+        pressure is much more intense.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">On
+        the contrary, the positron quadrature cancels the stroboscope effect and there
+        is no radiation pressure any more. But the equivalent pressure
+        responsible for inertia is still present on the opposite side. This
+        finally ends up with a symmetrical attraction effect.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Additionally,
+        more electrons in the vicinity should add their own
+        standing waves to the process and a synchronization process should take
+        place. Then the electron spin as a common phase or opposite phase (which
+        is simultaneous) becomes evident. Positrons, however, are all hidden inside protons where
+        the required quadrature is present.</p>
+        
+        <p align="left"><b>The shade effect.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">It
+        should be understood that any attraction effect actually occurs as a
+        result of a pressure from the opposite side.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">For
+        example, all
+        electrons and positrons in the sun collect their energy from <b><i>plane</i></b>
+        aether waves, whose residual energy is smaller when they go on propagating
+        towards the earth. Those propagating from the opposite direction are more
+        powerful and finally, they will <b><i>push</i></b> the Earth toward the Sun.
+        However, this shade effect is cancelled because all electrons and positrons in the Sun
+        also send waves toward the Earth and the result is nil. So, gravity cannot be explained by a shade
+        effect. This was also established by Poincaré, yet he was unaware of
+        the radiation pressure mechanism. Actually, all waves emitted by matter inside the sun are not plane any more.
+        They are obviously spherical, and the resulting radiation pressure for
+        "biconvex" fields of force is definitely weaker than that of a
+        "plano-convex" one. Now this explains
+        gravity.&nbsp;</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        diagram below shows that the gluonic field, which is made of plane
+        standing waves at least in the center, must radiate most of its energy on the axis.
+        Unlike electrons and positrons, the field does not radiate the
+        equivalent energy transversally any more. This is why the gluon shade effect
+        really works. The gluon
+        can attract all neutral, positive or negative particles all around except
+        along the axis : &nbsp;</p>
+        
+        </font>
+        
+        </td>
+    </tr>
+  </tbody></table>
+</div>
+        <p align="center"><img src="sa_mechanics_files/mecanique06.gif" width="476" border="0" height="256"></p>
+  <p align="center"><font size="4" face="Times New Roman">The quark and its gluonic
+  field of force.</font></p>
+  <p align="center"><font size="4" face="Times New Roman">The quark alone is
+  stable by itself but attracted particles are likely to destroy its
+  equilibrium.</font></p>
+<p align="center"><b><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></b></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>The lens effect.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Standard
+        waves can propagate into each other without interference, but standing waves do
+        interfere. Although it is not a well known fact, the lens effect really
+        works too. This can easily be tested inside air, for example. Depending on
+        its mechanism, a compressible
+        medium should transmit faster waves if the pressure is higher.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Standing waves alternately compress then dilate the aether substance inside
+        antinodes. Then the wave speed is slower of faster according to the
+        compression ratio and the wave is progressively scattered. Because
+        energy cannot be lost, there is an
+        action and reaction effect which explains the electron amplification process.</p>
+        
+        <p align="left"><b>Wave gears: pure mechanics.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"> One easily understands
+        how minutes
+        and hours inside a pendulum clock are converted by means of gears. There should be a 1 : 60 tooth
+        ratio, but the important point is that all teeth must be compatible.
+        Additionally, gears may
+        contain more or less of them using only <b><i>integers</i></b>, as one
+        and a half teeth obviously cannot do the job.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        analogy applies to matter. Matter
+        particles really work using "wave gears". Because the electron
+        wavelength is constant, there cannot be any wavelength incompatibility inside
+        matter. And because motion introduces a Doppler effect, hence a
+        wavelength difference, motion inside an atom must generate a specific
+        well defined phenomenon. This explains
+        Planck's constant, hence quanta.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        original "ultraviolet catastrophe" solved by Max Planck was
+        not that simple, but this phenomenon is still a matter of <b><i>integer</i></b>
+        wavelength because it is all about the Fresnel number n, which must also
+        be an integer. Augustin Fresnel used it to predict where the axial zero
+        amplitude zones should be located inside the well known
+        Fresnel-Fraunhofer diffraction pattern below.&nbsp;</p>
+        
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p align="center"><img src="sa_mechanics_files/balmer05a.jpg" width="800" border="0" height="150"></p>
+        <p align="center">The distance L to each zero and maximum amplitude
+        zones is given by:&nbsp;</p>
+        
+        <p align="center">L = r<sup> 2</sup> / (n * lambda)</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        radius r is that of a plane circular aperture. The Fresnel-Fraunhofer
+        diffraction pattern is typically present in the laser or pinhole camera
+        beam, but any composite wave emitter should also produce a similar
+        pattern. Thus, because the atomic nucleus exhibits wave properties and
+        because its structure is obviously composite, it should produce similar schemes
+        along privileged axes. This is not disputable.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Electrons
+        should be very sensitive to those zero amplitude zones. They are likely
+        to be captured inside any of them on a probability basis. The electron
+        capture and expulsion process because of excessive heat then becomes
+        easily explainable. Clearly, each atomic layer radius and the electron
+        behavior inside them is directly linked to this pattern.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">On
+        the one hand, any excessive energy input such as heat can cause the
+        electron expulsion and the required energy should be always the same
+        according to a specific Fresnel number. It is a <b><i>quantum</i></b> of
+        energy.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">On
+        the other hand, after a short period of time, the electron is captured
+        again by another zero amplitude zone. Then it oscillates until it is
+        fully immobilized and this process liberates the same quantum of energy.
+        Oscillations will cause the wave pattern to undulate: this is how the
+        light is emitted. The light frequency is that of the undulations.
+        Finally, the emitted energy is always the same according to a given zero
+        energy zone.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Then
+        one must admit that the well known Balmer series is linked to the
+        Fresnel number.</p>
+        
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p align="center"><img src="sa_mechanics_files/hydrogen.jpg" width="784" border="0" height="100"></p>
+        <p align="center">The hydrogen atom radiates light on frequencies
+        compatible with the Fresnel number.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        is the origin of Planck's constant.</p>
+        
+        </font><p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">
+
+        <font size="4" face="Times New Roman">
+        
+        The quantum of energy is definitely correct.</font></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">But
+        there are <i><b>no photons</b></i> there.&nbsp;</font></p><font size="4" face="Times New Roman">
+        
+        <center>
+
+        <p align="left"><b>Kinetic energy.</b></p>
+        
+        </center>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        gain in mass which is responsible for kinetic energy is well known to be
+        given by:
+        gamma * m <span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>   m. It was
+        predicted by Lorentz even though he was not aware that the true cause
+        was the Doppler effect. This means that kinetic energy for any material
+        body
+        traveling at .866 c (gamma = 2) equals its own mass at rest. Then
+        kinetic energy for one kilogram is easily given by Einstein's formula.
+        Please note that according to the MKS system, the speed of light c below
+        is: 300 000 000 meters per seconds.&nbsp;</p>
+        
+        <center>
+
+        <p align="center">E = m c<sup> 2</sup> = c<sup> 2</sup> =&nbsp; 9 * 10 ^
+        16 joules.</p>
+        
+        <p align="center">Kinetic energy = (gamma * m <span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>   m) c<sup> 2</sup></p>
+        
+        <p align="center">One kilogram mass gain = c<sup> 2</sup> =&nbsp; 9 * 10 ^ 16
+        joules.</p>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+        </center>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">To
+        be compared to Newton's mechanics:</p>
+        
+        <p align="center">Kinetic energy = m v<sup> 2</sup> / 2</p>
+        
+        <center>
+
+        <p align="center">One kilogram = v<sup> 2</sup> / 2 =&nbsp; 3.375 * 10 ^ 16
+        joules (definitely wrong).</p>
+        
+        <p align="center">&nbsp;&nbsp;</p>
+        
+        </center>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">However,
+        both formulae are practically equivalent for slower velocities as far as
+        the gamma factor is very near to 1. For example, let us check 3 million
+        meters per second using m = 1:</p>
+        
+        <p align="center">beta = .01</p>
+        
+        <p align="center">gamma = 1.00005</p>
+        
+        <p align="center">Kinetic energy = (gamma * m <span style="font-size:12.0pt;font-family:
+&quot;Times New Roman&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:
+FR-CA;mso-fareast-language:FR;mso-bidi-language:AR-SA" lang="FR-CA">–</span>   m) c<sup> 2</sup></p>
+        
+        <p align="center">.00005 kilogram mass gain = .00005 * c<sup> 2</sup> =&nbsp;
+        4.5 * 10 ^ 12
+        joules.</p>
+        
+        <center>
+
+        <p align="center">&nbsp;</p>
+        
+        </center>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">To
+        be compared to Newton's mechanics:</p>
+        
+        <p align="center">Kinetic energy = m v<sup> 2</sup> / 2</p>
+        
+        <center>
+
+        <p align="center">1 kg * v<sup> 2</sup> / 2&nbsp; =&nbsp; 3 000 000 ^ 2
+        / 2&nbsp; = 4.5 * 10 ^ 12 joules (accurate).</p>
+        
+        </center>
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Because the Doppler
+        effect is clearly involved, this is another evidence
+        that matter is made of waves.</p>
+        
+        <center>
+
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+        <p align="left"><b>The tip of the iceberg.</b></p>
+        
+        </center>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        page will never be complete because the Lorentz transformations severely
+        modify physics as a whole. The goal was to expose some examples. This
+        web site also contains 33 pages which are more or less dedicated to the
+        Wave Mechanics, and it will become more and more explicit over the
+        years.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        evolution could end up with a cleaner, cheaper, dramatic revolution in
+        the way we are using energy. Unfortunately, this appears unlikely to be
+        possible soon.</p>
+        
+        </font>
+
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table width="90%" border="4" cellpadding="20" cellspacing="6">
+    <tbody><tr>
+      <td>
+
+        <font size="4" face="Times New Roman">
+        
+        <p align="center">I am working on a new series of programs on waves and
+        matter mechanics.</p>
+        
+          <p align="center"><a href="programs/WaveMechanics00.html">WaveMechanics00.exe</a></p>
+        
+          <p align="center"><a href="programs/WaveMechanics01.html">WaveMechanics01.exe</a></p>
+        
+          <p align="center"><a href="programs/WaveMechanics02.html">WaveMechanics02.exe</a></p>
+        
+          <p align="center"><a href="programs/WaveMechanics03.html">WaveMechanics03.exe</a></p>
+        
+          <p align="center"><a href="programs/WaveMechanics04.html">WaveMechanics04.exe</a></p>
+        
+          <p align="center"><a href="programs/WaveMechanics05-2.html">WaveMechanics05.exe</a></p>
+        
+          <p align="center"><a href="programs/WaveMechanics06.html">WaveMechanics06.exe</a></p>
+        
+          <p align="center"><a href="programs/WaveMechanics07-2.html">WaveMechanics07.exe</a></p>
+        
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">The
+
+        program WaveMechanics05 deserves careful attention. Now, one can
+ observe 2-D waves
+          undergoing hard or soft reflection on reflectors. There
+          are three display options for amplitude, energy, and also 
+standing
+          waves, thanks to Mr. Marcotte's new calculus using Lagrangian.
+ Reversing the wave direction (they return to their origin) or
+          transforming traveling waves into standing waves is possible. A
+ special
+          function was added in order to check the
+          reflector gain, for example that of the corner reflector, 
+which is
+          surprisingly effective. One can also observe why a parabola 
+produces
+          straight waves capable of staying inside a narrow energy beam.</p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"> A new
+		<a href="http://www.freebasic.net/index.php/download">Compiler
+          for FreeBASIC</a> (<span style="mso-fareast-font-family: MS Mincho; color: black; mso-ansi-language: FR; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR">version
+          0.20.0b</span>) was released in 2008 with some new requirements. Gosub keywords
+        are not allowed any more and variables including integer must be
+          declared. However, all previous programs will still work properly on
+        condition that they are edited as follows:</p>
+          <p class="MsoNormal" align="center"><span style="color:black;mso-ansi-language:FR" lang="FR">#lang
+          "fblite"<o:p>
+          </o:p>
+          </span></p>
+          <p class="MsoNormal" align="center"><span style="color:black;mso-ansi-language:FR" lang="FR">Option
+          Gosub<o:p>
+          </o:p></span></p>
+        <p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify">The
+        FreeBASIC IDE editor is available here:
+		<a href="http://fbide.freebasic.net/">http://fbide.freebasic.net/</a></p>
+        
+</font> 
+        
+      </td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font>
+</p>
+
+<font size="4" face="Times New Roman">
+
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span>14<span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Relativistic_Big_Bang.html">The Relativistic Big 
+					Bang </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_phaseshift.html">The Electron Phase Shift </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					The Wave Mechanics </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_fields.html">Fields of Force </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_gravity.html">Gravity </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_quarks.html">Quarks </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_atoms.html">Atoms </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_experiences.html">Proofs and Experiences </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+
+</font>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <font size="4" face="Times New Roman">
+        
+        <center>
+
+        <p align="left"></p></center>Gabriel LaFreniere<p></p>
+        
+        <p align="left">Bois-des-Filion in Québec.</p>
+        
+        <p align="left">Email&nbsp; <a href="notice.html">Please read this notice.</a></p>
+        </font><p align="left"><font size="4" face="Times New Roman">On the Internet since September
+        2002. Last update October 2, 2009.</font></p>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p>&nbsp; 
+        
+</p>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- sa_mechanics.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:29:05 GMT -->
+</html>

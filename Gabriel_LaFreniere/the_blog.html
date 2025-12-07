@@ -1,0 +1,402 @@
+<html>
+<!-- the_blog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:50:54 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-gb">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="description" content="The Author Page">
+<meta name="keywords" content="physics, matter, standing waves, gravity, Relativity, Lorentz transformation, electron, atom, light, Doppler effect, fields, electricity, magnetism">
+<title>The Blog.</title>
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+<body bgcolor="#E1E1E1">
+<p>
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+
+<script type="text/javascript" src="the_blog_files/disclaim-element.js"></script>
+<script type="text/javascript" src="the_blog_files/graph-calc.js"></script>
+<script type="text/javascript" src="the_blog_files/jquery.html"></script>
+<script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "the_blog.html\/\/www.glafreniere.com\/the_blog.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "11";
+var displayMonth = "июл";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script>
+
+<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
+
+<script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+
+</p>
+
+
+<p align="center"><font size="6" face="Times New Roman">THE&nbsp; BLOG</font></p>
+<p align="center"><font size="4" face="Times New Roman"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2010.htm">2010</a>&nbsp;&nbsp;&nbsp; <a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2009.htm">2009</a>&nbsp;&nbsp;&nbsp;
+<a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2008.htm">200</a><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2007.htm">8</a>&nbsp;&nbsp;&nbsp;
+<a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2007.htm">2007</a></font></p>
+
+<p align="center"><font size="4" face="Times New Roman">
+Home page: <a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/matter.htm">Matter is made of waves.</a></font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><font size="4" face="Times New Roman">Please note
+          that I may be too busy to respond to your many messages.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Gabriel
+          LaFreniere&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/notice.htm">Notice.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/webmaster@glafreniere.com">webmaster@glafreniere.com</a></font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="100%"><font size="4" face="Times New Roman">
+
+          <p align="left"><b><font size="4" color="#000000" face="Times New Roman">June
+          17, 2011.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Below
+          is a video of the Airy disk while it is progressively created out of
+          incoming 3-D spherical waves.</span></font></p>
+
+          <font face="times new roman,new york">
+          </font><p align="center"><font face="times new roman,new york"></font><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/mkv/11-06_3D_Airy_Disk.mkv"><u><font size="4" color="#000080" face="Times New Roman">11-06_3D_Airy_Disk.mkv</font></u></a></p>
+          </font><p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">As
+          I pointed out, this is the very first experimental demonstration of
+          this most remarkable optical diffraction pattern.</span></font> <font size="4" face="Times New Roman">
+
+          You may examine and compile the following program which 
+created those images. The source code is in C. It stands in only one 
+file
+          and it is rather simple, so that it would be easier to analyze
+ how Mr.
+          Marcotte's 3-D wave algorithm works.</font></p><font size="4" face="Times New Roman">
+
+          </font><p align="center"><font size="4" face="Times New Roman"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/cprograms/11-06_3D_Airy_Disk.zip">11-06_3D_Airy_Disk.zip</a></font></p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><img src="the_blog_files/11-06_3D_Airy_Disk.jpg" width="1280" border="0" height="720"></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <table width="1000" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="100%">
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">Mr. </font></span><font size="4" color="#000000" face="Times New Roman">Jocelyn
+
+          Marcotte elaborated in 2006 a three-dimensional wave algorithm
+ whose
+          engineering is absolutely perfect. It produces a very smooth 
+and
+          accurate propagation whatever the wave direction. The dark 
+side of it is that your computer will have to perform billions of
+          calculations because the program is dealing with a 
+three-dimensional
+          space (1000 x 480 x 480) containing 230 million individual 
+cells. In addition,
+          each cell is surrounded by 26
+          neighboring ones whose relative influence must be 
+considered.&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" color="#000000" face="Times New Roman">This
+
+          is why you may have to wait for about one hour in order to see
+ the results.
+          Working on a larger volume requires more than 2 GB RAM memory
+          and a 64-bit compiler - and even more time. A sophisticated 
+use of
+          those new graphic cards may also help. Fortunately, more and 
+more supercomputers are becoming available in universities and
+          deliver
+          miracles as they perform parallel calculus.</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">I
+          don't understand why opticians, acousticians and scientists working in
+          domains such as astrophysics or electronics are still ignoring
+          this new laboratory of the future. Thanks to it, they will be capable
+          of studying any wave phenomena in a much easier way. For example, my
+          hypotheses concerning the "motion optics" are quite
+          reasonable and lead to Relativity. Finally, this prodigy is not that
+          complicated on condition that one is well aware of what is going on.</font></span>&nbsp;</p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          truth takes time. Meanwhile,
+          I will slowly but surely deliver new facts about Relativity. It is all
+          about waves in the presence of motion. In this context, the
+          consequence of motion on waves is obviously the Doppler effect. No
+          mystery there: the Lorentz transformations definitely indicate what
+          sort of Doppler effect is capable of canceling our attempts to detect
+          and measure our absolute motion. As a matter of fact, Lorentz's </span></font><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">1904
+          title was "Electromagnetic phenomena in a system moving with any
+          velocity smaller than that of light". Believe
+          me, Relativity is explainable without introducing such nonsense as a "space-time" transformation.&nbsp;</span></font></p>
+
+          <p align="left"><b><font size="4" face="Times New Roman">7 June 7, 2011.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">Below
+          are two programs showing how Philippe Delmotte's and Jocelyn Marcotte's
+          wave algorithms work.</font></span></p>
+          <p align="center"><font size="4" color="#000080" face="Times New Roman"><u><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/cprograms/11-05_Delmotte_Wave_Algorithm.zip">11-05_Delmotte_Wave_Algorithm.zip</a></u></font></p>
+          <p align="center"><font size="4" color="#000080" face="Times New Roman"><u><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/cprograms/11-05_Marcotte_Wave_Algorithm.zip">11-05_Marcotte_Wave_Algorithm.zip</a></u></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">Here
+          is another one showing how to use a marginal damping area in order to eliminate
+          annoying reflections at the medium limits.</font></span></p>
+          <p align="center"><a href="http://web.archive.org/web/20110711100712/http://glafreniere.com/cprograms/11-06_Damping_Area.zip"><font size="4" face="Times New Roman">11-06_Damping_Area.zip</font></a></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Mr.
+          Marcotte and me are working on a 3-D version of his algorithm, which
+          is especially adapted to the C programming language. Thanks to his
+          particularly brilliant use of pointers, Mr. Marcotte succeeded in
+          eliminating a whole array of variables, which required a huge amount
+          of RAM memory in 3-D mode.</span></font></p>
+
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Now,
+          there are only two arrays left and this allows us to work in a much
+          larger 3-D space. </span></font><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">I
+          will soon release two videos showing the Airy disk and the
+          Fresnel-Fraunhofer diffraction pattern.</span></font></p>
+
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Below
+          is one of my first experiences in 3-D. It shows that spherical standing waves
+          can be created using ingoing regular spherical waves.</span></font></p>
+
+          <p align="center"><span style="mso-fareast-font-family: MS Mincho"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/cprograms/11-06_3D_Spherical_Standing_Waves.zip"><font size="4" face="Times New Roman">11-06_3D_Spherical_Standing_Waves.zip</font></a></span></p>
+          <p align="center"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/mkv/11-06_3D_Spherical_Standing_Waves.mkv"><u><font size="4" color="#000080" face="Times New Roman">11-06_3D_Spherical_Standing_Waves.mkv</font></u></a></p>
+          <p align="center"><img src="the_blog_files/11-06_3D_Spherical_Standing_Waves.html" width="624" border="0" height="624"></p>
+          <p align="center"><font size="4" face="Times New Roman">Spherical
+          Standing Waves.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">This is only a
+          preview. Although it is virtual, our wave medium is a genuine
+          laboratory.</font></p>
+          <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">In
+          spite of my reaching 70 years of age next year, I have decided to
+          learn the C programming language. It works much faster than Basic.
+          It is also the most used one world wide. I added some basic
+          instructions at the beginning of the source code, which was edited using
+          Code::Blocks. For instance, it requires some SDL functions for
+          graphics and occasionally, the extra SDL_ttf.lib in order to display
+          some text. Learning all this was not a piece of cake (really!) but now I am quite
+          comfortable with it. The programs work fine!</span></font></p>
+
+          <p align="left"><b><font size="4" face="Times New Roman">May 13, 2011.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">While
+          learning the C programming language, I was helped by MM. </span></font><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Anselme Dewavrin
+          and Jocelyn Marcotte and I finally succeeded in producing an
+          acceptable program using Mr. Marcotte's 2-D wave algorithm. It is
+          quite interesting (results for an omni-directional emitter, a corner
+          primary reflector and parabolic secondary reflector).</span></font></p>
+          <p align="center"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/cprograms/Parabolic_Reflector.zip"><font size="4" face="Times New Roman">Parabolic_Reflector.zip</font></a></p>
+
+          <p align="left"><b><font size="4" face="Times New Roman">Le 31 mars
+          2011.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">I
+          added some new information on the expanding universe hypothesis in the
+          page on the&nbsp; <a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/sa_Relativistic_Big_Bang.htm">Relativistic Big Bang</a>.
+          Naturally, one speaks here about the aether, not&nbsp;
+          "space". This is of no consequence because distant galaxies
+          may be considered stationary with respect to the local
+          "space" as well.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">In
+          my opinion, the present theory about the acceleration of the expansion
+          of the Universe (according to Mr. Saul Perlmutter) is definitely
+          premature. The expansion phenomenon is still to be studied more
+          carefully, especially when it comes to analyzing the redshift of
+          distant galaxies.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Clearly,
+          a general expansion of a system as a whole, including that of the
+          medium which carries the waves, cannot produce a Doppler effect. In
+          addition, if the medium itself (call it "space" if you
+          prefer) is expanding, the light wavelength must expand proportionally.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">However,
+          if the observer and his instruments are also expanding, such a
+          redshift is no longer measurable.</font></span> <span style="mso-fareast-font-family: MS Mincho"><font size="4" face="Times New Roman">In
+          the diagram below, three galaxies A, B and C are moving away from each
+          other at the speed of light, which must accelerate far away from them
+          because of the medium expansion. However, it is postulated that galaxy
+          A only remains truly stationary.</font></span></p>
+          <p align="center"><img src="the_blog_files/Relativity_of_Expansion.html" width="616" border="0" height="410"></p>
+          <p align="center"><font size="4" face="Times New Roman">Waves emitted
+          in an expanding universe remain spherical and concentric: especially,
+          there is no Doppler effect.</font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">On
+          condition that everything is expanding at the same rate, all happens
+          as if there were no expansion.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">This
+          reasoning leads to a new "Relativity of Expansion
+          Postulate":</span></font></p>
+        <font size="4" face="Times New Roman">
+      <div align="center">
+        <table border="4" bordercolor="#000000" cellpadding="20" cellspacing="6">
+          <tbody><tr>
+            <td>
+        <font size="4" face="Times New Roman">
+        </font><p align="center"><font size="4" face="Times New Roman">Any general expansion is unverifiable.</font>
+        
+            </p></td>
+          </tr>
+        </tbody></table>
+      </div>
+        
+          </font>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          Relativity of Expansion Postulate.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">&nbsp;&nbsp;&nbsp;</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Surprisingly,
+          though, the universe <b><i>does not</i></b> obey this principle
+          because we do record a redshift. This is clearly the consequence of an
+          anomaly in the expanding process, but it is unclear what particular
+          variable may cause this. The anomaly could be the consequence of a lot
+          of causes, so that it is definitely unreasonable to explain it right
+          now by an accelerated expansion. For example, matter itself may not
+          expand, or its properties may not evolve proportionally.</span></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">Surely,
+          the cause of the redshif is still to be explained. The next step will
+          be to explain why Mr. Perlmutter's observations indicate a departure
+          from Hubble's predictions...</span></font></p>
+
+          <p align="left"><b><font size="4" face="Times New Roman">April 4, 2011.</font></b></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman"><span style="mso-fareast-font-family: MS Mincho">The
+          page on Plane Standing Waves was considerably modified in order to emphasize
+          the effects of motion on standing waves. Mr. Yuri Ivanov called this
+          phenomenon "Lively Standing Waves". In my opinion, though,
+          it should rather be called: "Ivanov's Waves". It is
+          definitely the first step towards a better knowledge of the Lorentz
+          Transformations, and Relativity.</span></font></p>
+          <p align="center"><font size="4" face="Times New Roman"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/sa_plane.htm">Ivanov's
+          Standing Waves</a></font></p>
+          <p style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Gabriel
+          LaFreniere</font></p>
+   </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><font size="4" face="Times New Roman">Home page: <a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/matter.htm">Matter is made of waves.</a></font></p>
+<p align="center"><font size="4" face="Times New Roman"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2010.htm">2010</a>&nbsp;&nbsp;&nbsp; <a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2009.htm">2009</a>&nbsp;&nbsp;&nbsp;
+<a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2008.htm">200</a><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2007.htm">8</a>&nbsp;&nbsp;&nbsp;
+<a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/the_blog_2007.htm">2007</a></font></p>
+
+<p align="center"><font size="4" face="Times New Roman"><a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/notice.htm">Notice.</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://web.archive.org/web/20110711100712/http://www.glafreniere.com/webmaster@glafreniere.com">webmaster@glafreniere.com</a></font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="�������@Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- the_blog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:51:03 GMT -->
+</html>

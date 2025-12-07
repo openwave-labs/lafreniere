@@ -1,0 +1,808 @@
+<html>
+<!-- sa_gravity.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:34:06 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Gravity</title>
+<meta name="description" content="Explanation of matter and physic laws by standing waves.">
+<meta name="keywords" content="physics, matter, standing waves, gravity, Relativity, Lorentz transformation, electron, atom, light, Doppler effect, fields, electricity, magnetism">
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></font><!-- BEGIN WAYBACK TOOLBAR INSERT --><script type="text/javascript" src="sa_gravity_files/disclaim-element.js"></script><script type="text/javascript" src="sa_gravity_files/graph-calc.js"></script><script type="text/javascript" src="sa_gravity_files/jquery.html"></script><script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "sa_gravity.html\/\/glafreniere.com\/sa_gravity.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "29";
+var displayMonth = "окт";
+var displayYear = "2010";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script><style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style><script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script><!-- END WAYBACK TOOLBAR INSERT --></p>
+
+
+<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span>22<span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font face="Times New Roman" size="4">
+<a target="_blank" href="http://mirit.ru/video/rd/gravi_en.htm">Film
+<span lang="en">&quot;</span>GRAVITATION<span lang="en">&quot;</span></a></font></p>
+<p align="center"><font size="6" face="Times New Roman">GRAVITY</font></p>
+
+<p align="center"><img src="sa_gravity_files/gravite07.gif" width="463" border="0" height="218"></p>
+<p align="center"><font size="4" face="Times New Roman">The gravity mechanism.</font></p>
+<p align="center"><font size="4" face="Times New Roman">There is a shade effect
+followed by the equivalent radiation between two material bodies.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Henri Poincare and
+other authors demonstrated that the wave energy should be equal everywhere.</font></p>
+<p align="center"><font size="4" face="Times New Roman">This argument is not
+relevant anymore because the radiation pressure exerted by intermediate fields of
+force is weaker in spite of this.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+ <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>The plano-convex field of force.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Matter
+        is made of waves and it radiates waves all around. Because the universe
+        is filled up with enormous quantities of matter, the replenishment or
+        amplification process transforms <b><i>plane</i></b> waves incoming from
+        very distant matter all around into outgoing <b><i>spherical</i></b> waves whose
+        energy is equal.
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Additionally,
+        waves radiated by matter create standing waves because of all incoming
+        plane waves. The result is an unusual standing wave set which may be
+        called a plano-convex field of force.
+        </p>
+        
+ </font>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+  <div align="center">
+    <center>
+    <table border="4" cellpadding="0" cellspacing="6">
+      <tbody><tr>
+        <td>
+          <p align="center"><img src="sa_gravity_files/planoconvexe01.gif" border="0">
+        
+        </p></td>
+      </tr>
+    </tbody></table>
+    </center>
+  </div>
+<p align="center"><font size="4" face="Times New Roman">The plano-convex field
+of force.
+        
+ </font>
+        
+</p>
+<p align="center"><font size="4" face="Times New Roman">Outgoing spherical waves
+and incoming plane waves are adding constructively.&nbsp;</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+ <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>The biconvex field of force.</b></p>
+        </font><p class="MsoTitle" style="text-indent: 35.4pt; text-align: justify"><font size="4" face="Times New Roman">Between
+        two material bodies, however, waves are spherical on both sides. The
+        result is a biconvex field of force.
+        
+ </font>
+        
+      </p></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center">&nbsp;&nbsp;&nbsp;</p>
+  <div align="center">
+    <center>
+    <table border="4" cellpadding="0" cellspacing="6">
+      <tbody><tr>
+        <td>
+          <p align="center"><img src="sa_gravity_files/champbiconvexe01.gif" border="0">
+        
+        </p></td>
+      </tr>
+    </tbody></table>
+    </center>
+  </div>
+<p align="center"><font size="4" face="Times New Roman">The biconvex field of
+force.
+        
+ </font>
+        
+</p>
+<p align="center"><font size="4" face="Times New Roman">Spherical waves incoming
+from
+both sides produce a different standing wave pattern.</font></p>
+<p align="center"><font size="4" face="Times New Roman">For a given area, the
+central on-axis pattern is smaller despite the theoretically
+equal wave energy.</font></p>
+<p align="center"><font size="4" face="Times New Roman">This smaller standing
+wave
+pattern radiates less energy. This causes a weaker radiation pressure.</font></p>
+<p align="center">&nbsp;&nbsp;&nbsp;</p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+ <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>Inertia.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Galileo
+        showed that any moving body should go on moving as long a no action or
+        friction causes it to decelerate. He called this phenomenon
+        "inertia" and the principle was more formally worded later as
+        Newton's first law.
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">However,
+        Newton was not aware that matter is constantly surrounded with equally
+        distributed and powerful plano-convex fields of force. The final result
+        remains inertia anyway because all actions cancel as long as they are equal.
+        </p>
+        
+ </font>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<font size="4" face="Times New Roman">
+  <p align="center">&nbsp;<img src="sa_gravity_files/gravite05.gif" width="234" border="0" height="234"></p>
+<p align="center">Inertia.</p>
+<p align="center">Matter constantly radiates spherical waves all around which
+create strong but still imperceptible fields of force.</p>
+  <p align="center">The important point is that because of this, weaker fields on
+  any side cause motion, acceleration or deceleration.</p>
+</font>
+        
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+ <font size="4" face="Times New Roman">
+        
+<p align="left"><b>The shade effect and the radiation pressure.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">All
+        forces are the
+        result of a difference between the radiation pressure and the shade
+        effect. The attraction effect between two material bodies may be the
+        result of a higher radiation pressure from opposite sides. However, in
+        the case of gravity, it is rather caused by a lower radiation pressure
+        between them.
+        </p>
+        
+ </font>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center">&nbsp;&nbsp;&nbsp;</p>
+<font size="4" face="Times New Roman">
+<p align="center"><img src="sa_gravity_files/gravite08.gif" width="463" border="0" height="218"></p>
+<p align="center">The shade effect.</p>
+<p align="center">This attractive force is usually cancelled because the
+intercepted energy is radiated again towards both material bodies.</p>
+<p align="center">This is what Poincare and other scientists thought.</p>
+</font>
+        
+<p align="center">&nbsp;&nbsp;&nbsp;</p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+ <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>The final disequilibria.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Because matter extracts some energy from plane aether waves, there is a
+        shade effect between two material bodies. This causes the intermediate plano-convex
+        fields to be weaker than the external ones. This is why they are
+        displayed as smaller arrows in the diagram below. Then the extracted
+        energy is totally radiated again into spherical waves and two joined
+        additional arrows are added right in the middle of the diagram.
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Theoretically,
+        the energy sum for two smaller arrows equals that of one bigger arrow
+        and the result should still be inertia. Because of this,
+        Henri Poincare and other authors thought that this would cancel
+        the shade effect and that no residual force should remain.
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">They
+        all concluded that waves could not explain gravity.&nbsp;
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"> For example, the
+        sun intercepts a little amount of energy from
+        aether waves. This produces a
+        shade effect, which is an attractive force. Then the sun radiates the exact
+        amount of energy as spherical wavelets which create plano-convex fields
+        all around including the intermediate shaded space, where they are weaker because
+        of the weaker plane waves. The same radiated waves also create
+        additional biconvex fields of force because they encounter opposite
+        spherical waves. Such fields are truly weaker for a given quantity of
+        energy and they
+        cannot cancel exactly the attractive force. It turns out that inside the
+        intermediate shaded space, the sum of both plano-convex and biconvex
+        gravitational fields of force cannot achieve equilibrium any
+        more.
+        </p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        important point is that biconvex fields of force are weaker than plano-convex
+        ones. Even though the wave energy involved is the same, the radiation
+        pressure is not.
+        </p>
+        
+ </font>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center">&nbsp;&nbsp;</p>
+<p align="center"><img src="sa_gravity_files/gravite07.gif" width="463" border="0" height="218"></p>
+<p align="center"><font size="4" face="Times New Roman">The complete gravity
+mechanism.</font></p>
+<p align="center">&nbsp;&nbsp;&nbsp;</p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"> 
+        
+ <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">It should
+        be emphasized that the difference is very small. Gravity is not the
+        "fundamental force of the Universe". It is only a residual
+        force, quite insignificant as compared to the sum of transferred
+        energy from incoming to outgoing waves by one kilogram of matter during
+        one second, which is far greater then Einstein's mc squared.</p>
+        
+        <p align="center">&nbsp;&nbsp;&nbsp;</p>
+<p align="center"> <b>NEWTON&nbsp;
+WAS&nbsp; RIGHT</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Isaac
+        Newton showed that the gravity force F acts according to a constant G,
+        the mass M of two material entities, and according to the square of the
+        distance L as given by:</p>
+        
+ </font>
+        
+        <p align="center"><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA"><font size="4" face="Times New Roman">F
+        = G M<sub>1</sub> M<sub>2</sub> / L<sup> 2</sup></font></span></p>
+        
+        <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        is brilliant, albeit Newton never explained the gravity mechanism. He wrote :</p>
+        
+ </font>
+        
+        <p align="center"><font size="4" face="Times New Roman">"Hypotheses
+        non fingo".</font></p>
+        
+        <p align="center"><font size="4" face="Times New Roman">(I do not to
+        put forth assumptions).</font></p>
+        
+ <p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+        
+        <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">As
+        a matter of fact, gravity cannot work exactly as Newton predicted. There are many
+        reasons :</p>
+        
+        <ul>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Stars
+            and planets
+            are really big and the distance L becomes inaccurate for short
+            distances.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Their
+            surface density is lower.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Most
+            of them are spinning and this should produce a Doppler torque effect.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Mercury's
+            elliptic orbit causes a variable Doppler effect.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Any
+            high speed difference, for example inside supernovae, also produces a
+            Doppler effect.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+            solar wind exerts a pressure whose effects may become noticeable
+            after a century.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+            light emitted by the sun also exerts a very faint but still existing
+            one-way radiation pressure.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Jupiter
+            and Saturn in conjunction severely modify the center of inertia of
+            the solar system.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Gravity
+            acts and reacts at the speed of light.</p></li>
+          <li>
+            <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Gravity
+            is not fully additive. It is weaker behind a second planet (e.g.
+            during an eclipse).</p></li>
+        </ul>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The list is not exhaustive.
+        Many more phenomena appear rather strange and need to be more carefully
+        explained. However, there is no need to calculating gravity in a totally new way.
+        Newton's equation works to a first approximation, and then one must make
+        some adjustments for special cases if needed.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        light <b><i>is not</i></b> affected by gravity. However, electrons are
+        capable of regenerating some
+            new light, for example inside air, water or optical glass. So one can explain
+        similar deviations by the
+            presence of particles, especially close to the Sun or stars.&nbsp;Because
+            of the variable solar wind, this deviation should not be constant,
+            albeit the particle speed may compensate for variable density. This
+            was demonstrated by the Fizeau experiment. A gaseous cloud around or
+        inside a galaxy may also produce a lens effect. And finally, a black
+        hole cannot emit any light simply because its plasma cannot. It is a
+        well known fact that matter inside a quasar or pulsar is
+        highly compressed into a very dense plasma. Such matter surely cannot
+        emit normal light because of its severely modified structure, albeit
+        external gaseous
+        rings or layers still can.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">There
+        is no General Relativity because gravity rarely involves
+        "relativistic" speed. Gravity is just a regular force, quite
+        similar to all other forces. Surely, gravity
+        cannot "bend space". It is geometrically impossible. This hypothesis is
+        totally absurd, actually an insult to our intelligence. What's more, it does not mechanically explain anything.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Frankly,
+        did you really believe that?</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">It
+        is much better to simply admit Newton's law.</p>
+        
+ </font>
+        
+        </td>
+      </tr>
+    </tbody></table>
+  </div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span>22<span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| <a title="Quarks " href="sa_quarks.html">24</a> | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Relativistic_Big_Bang.html">The Relativistic Big 
+					Bang </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_phaseshift.html">The Electron Phase Shift </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_mechanics.html">The Wave Mechanics </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_fields.html">Fields of Force </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					Gravity </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_quarks.html">Quarks </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_atoms.html">Atoms </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_experiences.html">Proofs and Experiences </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+
+<p align="center">&nbsp;</p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+<font size="4" face="Times New Roman">
+
+        <center>
+
+        <p align="left"></p></center>Gabriel LaFreniere<p></p>
+        
+        <p align="left">Bois-des-Filion in Québec.</p>
+        
+        <p align="left">Email&nbsp; <a href="notice.html">Please read this notice.</a></p>
+<p align="left">On the Internet since September
+        2002. Last update January 26, 2010.</p>
+        
+</font>
+
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- sa_gravity.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:34:24 GMT -->
+</html>

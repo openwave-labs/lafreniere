@@ -1,0 +1,1413 @@
+<html>
+<!-- sa_quarks.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:36:36 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-gb">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="description" content="Explanation of matter and physic laws by standing waves.">
+<meta name="keywords" content="physics, matter, standing waves, gravity, Relativity, Lorentz transformation, electron, atom, light, Doppler effect, fields, electricity, magnetism">
+<title>The Quarks</title>
+<style type="text/css" id="wrc-middle-css">.wrc_whole_window{	display: none; 	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal;	margin: 0px;	padding: 0px;	border: 0px;	line-height: normal;	letter-spacing: normal;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;	margin: 0px auto;	margin-top: 15%;    background: url("chrome://wrc/skin/png/background-body.png");	background-color: rgb(39, 53, 62);}.wrc_middle_logo {    background: url("chrome://wrc/skin/logo.jpg") no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	text-align: center;	margin-bottom: 15px;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	text-decoration: none;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script language="JavaScript" type="text/javascript" id="wrc-script-middle_window">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'block';		}	}}</script></head>
+
+<body bgcolor="#E1E1E1">
+<div align="center">
+<span style="font-size: 6pt" lang="en">&nbsp;</span></div>
+<font face="Arial">
+<p align="center" style="margin-top: 0; margin-bottom: 0"><span class="white">
+<span lang="en"><font size="2"><b>&nbsp;</b></font></span></span></font><!-- BEGIN WAYBACK TOOLBAR INSERT --><script type="text/javascript" src="sa_quarks_files/disclaim-element.js"></script><script type="text/javascript" src="sa_quarks_files/graph-calc.js"></script><script type="text/javascript" src="sa_quarks_files/jquery.html"></script><script type="text/javascript">
+//<![CDATA[
+var firstDate = 820454400000;
+var lastDate = 1356998399999;
+var wbPrefix = "http://web.archive.org/web/";
+var wbCurrentUrl = "sa_quarks.html\/\/glafreniere.com\/sa_quarks.htm";
+
+var curYear = -1;
+var curMonth = -1;
+var yearCount = 18;
+var firstYear = 1996;
+var imgWidth=450;
+var yearImgWidth = 25;
+var monthImgWidth = 2;
+var trackerVal = "none";
+var displayDay = "26";
+var displayMonth = "янв";
+var displayYear = "2011";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function showTrackers(val) {
+	if(val == trackerVal) {
+		return;
+	}
+	if(val == "inline") {
+		document.getElementById("displayYearEl").style.color = "#ec008c";
+		document.getElementById("displayMonthEl").style.color = "#ec008c";
+		document.getElementById("displayDayEl").style.color = "#ec008c";		
+	} else {
+		document.getElementById("displayYearEl").innerHTML = displayYear;
+		document.getElementById("displayYearEl").style.color = "#ff0";
+		document.getElementById("displayMonthEl").innerHTML = displayMonth;
+		document.getElementById("displayMonthEl").style.color = "#ff0";
+		document.getElementById("displayDayEl").innerHTML = displayDay;
+		document.getElementById("displayDayEl").style.color = "#ff0";
+	}
+   document.getElementById("wbMouseTrackYearImg").style.display = val;
+   document.getElementById("wbMouseTrackMonthImg").style.display = val;
+   trackerVal = val;
+}
+function getElementX2(obj) {
+	var thing = jQuery(obj);
+	if((thing == undefined) 
+			|| (typeof thing == "undefined") 
+			|| (typeof thing.offset == "undefined")) {
+		return getElementX(obj);
+	}
+	return Math.round(thing.offset().left);
+}
+function trackMouseMove(event,element) {
+
+   var eventX = getEventX(event);
+   var elementX = getElementX2(element);
+   var xOff = eventX - elementX;
+	if(xOff < 0) {
+		xOff = 0;
+	} else if(xOff > imgWidth) {
+		xOff = imgWidth;
+	}
+   var monthOff = xOff % yearImgWidth;
+
+   var year = Math.floor(xOff / yearImgWidth);
+	var yearStart = year * yearImgWidth;
+   var monthOfYear = Math.floor(monthOff / monthImgWidth);
+   if(monthOfYear > 11) {
+       monthOfYear = 11;
+   }
+   // 1 extra border pixel at the left edge of the year:
+   var month = (year * 12) + monthOfYear;
+   var day = 1;
+	if(monthOff % 2 == 1) {
+		day = 15;
+	}
+	var dateString = 
+		zeroPad(year + firstYear) + 
+		zeroPad(monthOfYear+1,2) +
+		zeroPad(day,2) + "000000";
+
+	var monthString = prettyMonths[monthOfYear];
+	document.getElementById("displayYearEl").innerHTML = year + 1996;
+	document.getElementById("displayMonthEl").innerHTML = monthString;
+	// looks too jarring when it changes..
+	//document.getElementById("displayDayEl").innerHTML = zeroPad(day,2);
+
+	var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+	document.getElementById('wm-graph-anchor').href = url;
+
+   //document.getElementById("wmtbURL").value="evX("+eventX+") elX("+elementX+") xO("+xOff+") y("+year+") m("+month+") monthOff("+monthOff+") DS("+dateString+") Moy("+monthOfYear+") ms("+monthString+")";
+   if(curYear != year) {
+       var yrOff = year * yearImgWidth;
+       document.getElementById("wbMouseTrackYearImg").style.left = yrOff + "px";
+       curYear = year;
+   }
+   if(curMonth != month) {
+       var mtOff = year + (month * monthImgWidth) + 1;
+       document.getElementById("wbMouseTrackMonthImg").style.left = mtOff + "px";
+       curMonth = month;
+   }
+}
+//]]>
+</script><style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style><script type="text/javascript">
+ var wmDisclaimBanner = document.getElementById("wm-ipp");
+ if(wmDisclaimBanner != null) {
+   disclaimElement(wmDisclaimBanner);
+ }
+</script><!-- END WAYBACK TOOLBAR INSERT --></p>
+
+
+<font face="Arial" size="4">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| 24 | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_evolution.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+</font>
+
+<p align="center"><font size="6" face="Times New Roman">QUARKS</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/proton09.gif" width="640" border="0" height="358">
+      </p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;A quark is an
+electron pair containing a gluonic field whose phase in the center is pi / 2 shifted.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The pi / 2 phase shift
+is that of a positron; it allows it to hide inside a neutron and produce a
+proton.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table width="600" border="4" cellpadding="20" cellspacing="6">
+    <tbody><tr>
+      <td><font size="4" face="Times New Roman">
+        </font><p align="center"><font size="4" face="Times New Roman"><span lang="FR-CA">This is only an hypothesis !</span></font></p>
+        <font size="4" face="Times New Roman">
+        <p align="center">The quark is surely a wave system with an additional
+        field of force.</p>
+        </font><p align="center"><font size="4" face="Times New Roman">However, the correct structure is still to be
+        demonstrated.</font><font size="4" face="Times New Roman"></font></p></td>
+      </tr>
+    </tbody></table>
+  </center>
+  </div>
+  <p align="center"><b>&nbsp;&nbsp;&nbsp;</b></p>
+
+<p align="center"><font size="4" face="Times New Roman"><b>THREE QUARKS,
+OR MAYBE JUST SIX ELECTRONS.</b></font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>What are we looking for?</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        goal is to find what is a "quark". We know that three quarks
+        may produce a
+        proton or a neutron. This is what Murray
+        Gell-Mann discovered. Because there are
+        "up" and "down" quarks, they should be slightly different.
+        So we are looking for three quarks, albeit one must realize that most
+        observations on quarks appear quite fuzzy. One cannot truly observe
+        quarks because observations are limited and sometimes misleading. And
+        what's more, it is impossible to observe a stand alone quark because it
+        becomes highly
+        unstable.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Honestly, there could be no quarks at all, but rather a
+        rather simple wave structure which <b><i>seems</i></b> to contain three quarks.</p>
+        <ul>
+          <li>
+            <p align="left">The wave unit should be made of only two
+            electrons because they must be the simplest possible.</p></li>
+          <li>
+            <p align="left">Electrons or positrons close together should
+            overcome their electrostatic charge and form a structure.</p></li>
+          <li>
+            <p align="left">The wave addition should produce a strong gluonic field
+            because of the verifiable gluing effect.&nbsp;&nbsp;</p></li>
+          <li>
+            <p align="left">The structure should still radiate a "color
+            charge" as a result of the spin (or phase) addition.</p></li>
+          <li>
+            <p align="left">However this may be recorded&nbsp; as +2/3 and <span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: FR-CA; mso-fareast-language: FR; mso-bidi-language: AR-SA" lang="FR-CA">–</span>1/3
+            spins because of the point of view.</p></li>
+          <li>
+            <p align="left">The three quark units joined together must be neutral
+            because they may produce a neutron.</p></li>
+          <li>
+            <p align="left">However, it should be positive in its center in order
+            to accept a positron there and become a proton.</p></li>
+          <li>
+            <p align="left">The proton should be capable of capturing one
+            electron in order to become an hydrogen atom.</p></li>
+          <li>
+            <p align="left">The proton should exhibit eight axes in order to explain the
+            constant 8-electron external atomic shell.&nbsp;</p></li>
+          <li>
+            <p align="left">Many protons close together should overcome their
+            electrostatic charge and form a structure.</p></li>
+          <li>
+            <p align="left">Many protons should capture the same number of
+            electrons in different periodic atomic shells.</p></li>
+          <li>
+            <p align="left">The shells should coincide with Fresnel's periodic
+            zones in order to explain the spectral lines.</p></li>
+        </ul>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">According
+        to the <a href="sa_mechanics.html">Wave Mechanics</a>, fast moving electrons
+        or positrons can produce two or more quark pairs because of the
+        resulting gluonic
+        field ability to attract additional positrons or electrons in the vicinity.
+        However, quarks are unstable because this attraction effect may also
+        cause their destruction.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Quarks
+        did not exist in the
+        beginning of times. After an hypothetic and revisited Big Bang, when
+        there was nothing but the aether filled up with waves, a large number of
+        electrons and positrons had to be be created out of incoming waves.
+        Then, because the
+        synchronization process is impossible in the absence of matter, there was no fundamental difference between
+        them. No synchronized spin, just randomly distributed phases. So the attraction
+        effect between electrons and positrons produced a lot of
+        quark pairs. Although three quarks coming close together before disintegrating
+        was less likely to happen, they could still join together occasionally
+        to
+        become a neutron and, finally, a stable proton.</p>
+        
+        <p align="left"><b>Just concentric wave diagrams.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Moving matter behaves exactly as
+        though it was
+        perfectly at rest with respect to the aether. Then the electron waves become
+        apparently concentric, ruling out the Doppler effect in accordance with
+        the Lorentz transformations. So this page shows only concentric, hence
+        much simpler wave diagrams.</p>
+        <p align="left"><b>The lambda / 2 phase shift.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The electron
+        central antinode is one wavelength wide instead of the lambda / 2 antinode
+        which is common for all standing waves. This produces a lambda / 2
+		<a href="sa_phaseshift.html">phase shift</a> between two opposite wave parts.&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        is of the utmost importance. Most diagrams showing interferences between
+        two or more emitters do not apply to matter waves. Thus, before observing more complicated diagrams, one
+        should realize that waves emitted toward opposite directions are lambda / 2 shifted.
+        They are lambda / 4 shifted with respect to the center. This should
+        be clearly visible on the following diagrams:</p>
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+<p align="center"><font size="4" face="Times New Roman"><img src="sa_quarks_files/phaseshift04a.jpg" border="0"></font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The phase no longer coincides
+beyond the center.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;<img src="sa_quarks_files/huygens00.gif" width="547" border="0" height="281"></font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The electron core is one
+wavelength wide.</font></p>
+<p align="center"><font size="4" face="Times New Roman">So two opposite peaks are distant by an additional half
+wavelength.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<p align="center"><img src="sa_quarks_files/proton02.gif" width="401" border="0" height="141"></p>
+
+<p align="center"><font size="4" face="Times New Roman">The electron pulsates lambda /
+4 shifted waves with respect to the center.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>Electrostatic forces.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The page
+        on wave mechanics shows that electrostatic forces appear between two
+        electrons or positrons while they are relatively far apart. Then their
+        standing wave system is weaker and the wavelets which they constantly
+        emit meet, producing a very special set of plane standing waves on the
+        axis. Then
+        those standing waves are amplified by aether waves and the energy is
+        radiated along the axis toward both particles, creating a repulsion
+        effect. Moreover, when the waves are out of phase beyond both
+        electrons, they destroy themselves and allow the inner waves to push
+        both electrons from each other. This does not occur between an electron
+        and a positron, and so they are attracted instead.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Most
+        wave diagrams show compressed zones in white and dilated
+        ones in black, allowing any intermediate gray shade. However, this method
+        cannot show the zero-energy zones because they are then represented by a
+        medium gray. So I had to oblige the computer to darken those zones to
+        black instead, making the diagrams much more revealing.&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Moreover,
+        there are billions of wavelengths between those electrons and one simply
+        cannot show them all. So the diagrams will show only a small number of
+        waves. Let's
+        repeat that we are speaking about electrostatic charges here. Then the
+        so-called "in-waves" are absent and the electron is shown as a
+        pulsating wave centre only. There are no standing waves: just outward
+        waves whose energy fades out according to the normal square of the
+        distance law.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Observe
+        that while the distance between two electrons is an integer
+        multiple of the wavelength, the waves are adding themselves beyond each
+        electron.</p>
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><a href="../../web.archive.org/web/20110126071431/http_/glafreniere.com/images/proton03.gif"><img src="sa_quarks_files/proton03a.gif" width="640" border="0" height="401"></a></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">Please click on the image
+(+Shift) for the animated diagram (1.77 MB).</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">Distance : any
+wavelength multiple integer (very long distance).</font></p>
+<p align="center"><font size="4" face="Times New Roman">This diagram does not
+involve spherical standing waves. Just outwards traveling waves.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Those waves add themselves beyond each electron.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">This produces an electrostatic
+field, <b><i>not a quark,</i></b> because the spherical standing waves are
+absent.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><a href="../../web.archive.org/web/20110126071435/http_/glafreniere.com/images/proton04.gif"><img src="sa_quarks_files/proton04a.gif" width="640" border="0" height="401"></a></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">Please click on the image
+(+Shift) for the animated diagram (1.73 MB)</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">Distance : any
+wavelength multiple integer plus one half (very long distance).</font></p>
+<p align="center"><font size="4" face="Times New Roman">Now the traveling waves are
+destroying themselves beyond each electron.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The plane standing wave
+set in the center is still present as a repulsive electrostatic
+field.&nbsp;&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/proton04b.gif" border="0"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">Here, the waves from an
+electron and a positron produce an axial asymmetry (not animated).</font></p>
+<p align="center"><font size="4" face="Times New Roman">The on-axis waves are
+adding themselves on the left, but they destroy themselves on the right.</font></p>
+<p align="center"><font size="4" face="Times New Roman">This situation may
+differ according to the spin and/or the distance.</font></p>
+<p align="center"><font size="4" face="Times New Roman">It leads to a magnetic
+field because there are two poles.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Up to now, I could not
+determine whether the north pole is on the left or on the right.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>Two electrons very close together.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        situation is not likely to happen because of the strong repulsion
+        effect. The animation below shows two electrons from both spins (the
+        phase is opposite). For very short distances, the standing wave
+        sets are present and they fully add themselves.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        system <b><i>cannot be a quark</i></b> because it oscillates everywhere
+        in the same phase. The central zone must rather oscillate in
+        perfect quadrature, in other words according to the positron's phase. This
+        is important because the proton (which contains three quarks) must accept this positron in its
+        centre, making it positive.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        strong set of plane standing waves on the axis between those electrons
+        is absent while the distance is an extra lambda / 2 length (more
+        or less).&nbsp; The same spin system leads to the opposite result.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        indicates that two electrons can theoretically lock themselves in phase on each
+        wavelength multiple. However this is an unstable condition because
+        electrons are seldom perfectly immobile near one another, and because
+        the repulsion effect is far much stronger most of the time.</p>
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/proton07.gif" width="640" border="0" height="358"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">Here, two electrons
+whose spin is opposite are very close together.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The system may also be
+made up of two positrons and the spin may be the same.&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman"><b>PARTIALLY&nbsp;
+STANDING&nbsp; WAVES</b></font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">According to my wave mechanics, the electron is a finite
+        system. Its standing wave area is very small, but
+        it constantly radiates waves which obey the normal square of the distance
+        law. This means that for a given distance from the electron's core, say
+        the proton's diameter (which equals about 100 million electron
+        wavelengths according to the formula shown below), its standing waves gradually transform to <b><i>partially
+        standing waves</i></b>. They finally transform to regular traveling waves.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Those
+        partially standing waves are well known. They produce a characteristic
+        pea pod-like envelope. The important point is that, unlike regular
+        standing waves, the waves' amplitude never reaches zero. So, they
+        are "partially moving" like this:</p>
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/stat.gif" width="640" border="0" height="101"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">Partially standing
+waves.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">It
+        should be emphasized that a "true" electron is not a pure
+        standing wave system. Because it constantly transfers energy from aether
+        waves to spherical traveling out-waves, it is rather a partially
+        standing wave system. This is important because it explains the neutron
+        neutral charge and, in addition, the positron's amazing presence inside
+        the proton.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Here
+        is my most recent view of an electron's waves. Observe that the pure
+        standing waves around the core gradually transform to pure traveling
+        waves with a transitory partially standing wave state between them.
+        However, this diagram is a simplification. The correct one would show
+        billions of wavelengths.</p>
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/proton08.gif" width="640" border="0" height="258"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">The electron is
+primarily made of "partially standing waves".</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">Two such systems very
+close together will produce waves whose phase is lambda / 4 shifted.</font></p>
+<p align="center"><font size="4" face="Times New Roman">This makes a quark
+containing a pi / 2 shifted gluonic field.&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Partially
+        standing waves can also be seen as a regular set of standard standing
+        waves containing more waves in just one direction. The important
+        difference is that two such sets adding themselves can produce standing
+        waves whose phase is lambda / 4 shifted (pi / 2) like a positron.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        pi / 2 phase shift was my main obstacle for months. I could not understand
+        why the same nucleon particle (proton or neutron) could exist in those
+        two different forms, one neutral and the other one positive. The
+        so-called beta decay indicated that a proton should contain a hidden
+        positron, but the existence of such an antiparticle inside it appeared
+        unlikely to be possible.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">By the way, neutrinos
+        from the same beta decay do not exist. The "creation" of this particle by Wolfgang Pauli and Enrico Fermi (from the
+        Italian,&nbsp; neutrino means little neutral) reminds us of the photon, which
+        does not exist either. They did not really detect this particle; they
+        just wanted to explain the small energy difference, which is simply emitted as a wave
+        beam. I show elsewhere that the Compton effect can be explained by such
+        a wave beam for both photons and neutrinos.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">And
+
+        so, one can postulate that while two electrons are some distance
+ from one
+        another, but not too distant, they become a quark containing a 
+gluon,
+        i.e. plane standing waves
+        between them, whose phase is that of a positron. Then the whole 
+system becomes neutral (no negative nor positive charge). In addition,
+        three such quarks placed crosswise on the three Cartesian axes 
+will
+        become a neutron. Finally, this neutron with a positron in its 
+center will become a proton.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        next animated diagram shows a true quark. The waves placed in the middle
+        of the system are lambda / 4 shifted. In other words, there is a pi / 2
+        phase shift on the axis.&nbsp;</p>
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/proton09.gif" width="640" border="0" height="358"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;Now, <b><i>this is
+a quark</i></b>.</font></p>
+
+<p align="center">&nbsp;</p>
+
+<p align="center"><img src="sa_quarks_files/proton09a.gif" width="640" border="0" height="57"></p>
+
+<p align="center"><font size="4" face="Times New Roman">While the phase is worth
+lambda / 4 (here, 24 images / 4 = 6), the center amplitude reaches a maximum.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The distance between
+both electrons must be a multiple of the wavelength plus or minus lambda / 4.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The on-axis waves
+between those electrons are traveling towards the center.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">They will "push" the positron towards the proton's
+center.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<p align="center"><img src="sa_quarks_files/quark14.gif" width="640" border="0" height="138"></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;This quark is made of 2 electrons or two positrons from the
+<i><b>same</b></i> spin.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">Those slightly different
+models (same spin, or both spins) could explain the "up" and
+"down" quarks.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">A quark made of two
+positrons would be an "anti-quark".</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">Three anti-quarks would
+make an antiproton containing an electron at its center.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;<b>GLUONIC&nbsp;
+FIELDS</b></font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        very special electron tandem as a quark can simultaneously pulsate waves
+        whose phase is that of the positrons and the electrons. This means that those waves can cancel the electrons'
+        normal negative charge.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        image No. 6 below was borrowed from the same animation shown above. The
+        important point is that those waves are finally pi / 4 shifted and that they are
+        emitted in all directions. This electron tandem cannot act and react like just one electron any
+        more. It is neutral as compared to both electrons and positrons or
+        protons, but it still has a phase, hence a "colour charge" as
+        compared to other quarks.</p>
+        
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/proton09c.gif" width="640" border="0" height="358"> 
+        
+      </p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;Here the gluonic field is shown before its
+amplification.</font></p>
+<p align="center"><font size="4" face="Times New Roman">All those waves are pi /
+4 shifted. They cancel the electron's negative charge.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>The gluonic field round trip.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        gluonic field is the on-axis standing waves set. It is the result of
+        three steps because the waves must perform a round trip between the center
+        and the external on-axis zone, and also because the additive
+        result is finally amplified. This process explains why the neutron,
+        which contains only 6 electrons, can nevertheless be 1838 times heavier
+        then one electron.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        diagram below shows that when the electron spin is the
+        same, and also when they are distant by an integer multiple of the
+        wavelength (this is a quark), the standing waves partially destroy
+        themselves between them. Conversely, they partially add themselves beyond:</p>
+        
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/quark15.gif" width="640" border="0" height="221"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">The on-axis waves beyond
+both electrons are mostly <b><i>standing</i></b> waves.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Such standing waves are
+amplified by aether waves.</font></p>
+<p align="center"><font size="4" face="Times New Roman">So they radiate the
+resulting energy on both sides, hence one half goes back towards the center.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>Half of the energy is returned towards the center.</b></p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+
+        diagram below shows that the standing waves on both sides are 
+nearly
+        concentric. In other words, their center of curvature is roughly
+ the same and it is not that of the electrons any more. It is located
+        between them in the middle of the quark.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">In
+        accordance with Huygens' Principle, such curved standing waves should
+        emit their energy as traveling waves on both sides, but just the
+        amplified part. Because those
+        standing waves are concave, they are like a telescope mirror and
+        the traveling waves are focused towards the center. One can show in
+        optics that this produces an "Airy disk", where the amplitude
+        is very high.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">&nbsp;In addition, more
+        waves are traveling towards the center from the opposite direction. So the
+        two focused waves sets will add themselves and produce more standing
+        waves in the center, which will add their energy to the already existing
+        gluonic field.&nbsp;Then this high energy standing waves set will also
+        be amplified by aether waves. Finally, all the on-axis space around both
+        electrons will be filled with this "gluonic field".</p>
+        
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/quark15a.jpg" width="640" border="0" height="221"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">Those waves are nearly <b><i>concentric</i></b>.</font></p>
+<p align="center"><font size="4" face="Times New Roman">Their centre of
+curvature is not that of the electrons any more.</font></p>
+<p align="center"><font size="4" face="Times New Roman">In accordance with
+Huygens' Principle they should return half of their energy towards the centre.</font></p>
+<p align="center">&nbsp;</p>
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <center>
+        
+        <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>Fresnel's square of the amplitude law.</b></p>
+        
+        </font><p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">Augustin
+        Fresnel discovered that wave energy is equal to the square of the
+        amplitude. This law is well known but most
+        scientists still do not understand it well. For instance a laser
+        beam produces an Airy disk which is postulated to be the result of the addition of billions of wavelets
+        originating from the laser surface. However, the wavelets
+        energy decreases according to the also well known square of the distance
+        law. So it becomes difficult to understand why the laser energy does not
+        significantly decrease until the distance reaches the "junction
+        point".</font></p><p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        formula for this junction point is: L = D<sup> 2</sup> / 2.44 <font size="4" face="Symbol">l</font>.
+        For instance, the distance is 630 mm (about 2 feet for
+        </font> <font size="4" face="Symbol">l
+        </font> <font size="4" face="Times New Roman"> = 0.00065) for a one millimeter
+        aperture red laser. This
+        happens because the waves emitted by two electrons will add their
+        amplitude (1 + 1 = 2) while the energy will rather be the square of the
+        total amplitude (2 times 2 = 4).&nbsp;</font></p><font size="4" face="Times New Roman">
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        wave energy from 2 electrons will cancel when the phase is opposite
+        but it will be squared while the phase is the same. Because the wave
+        distribution is sinusoidal, this would normally end
+        with a simple additive result but there is an unusual exception on the
+        axis joining two electrons. The waves are <b><i> always</i></b> adding themselves there.
+        They never cancel inside a space which is much wider than just one wavelength. This
+        space is a "gluon", a <b><i>gluonic field</i></b>.&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">According
+        to Pythagoras, the gluonic field D transverse diameter up to a lambda / 4 phase is D =
+        2 SQRT( L) in wavelengths. It seems that the
+        distance&nbsp; L&nbsp; between both electrons is about 100 million
+        wavelengths, and this indicates that the gluonic field diameter could be worth 20000
+        electron wavelengths.&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">So
+        the gluonic field could be a very long 20,000 x 100,000,000 wavelengths
+        prolate ellipsoid (cigar-shaped) area. Everywhere inside it, the energy is
+        <b><i>four times</i></b> that of just one electron for the same area.
+        The gluonic field also includes the standing waves beyond both
+        electrons, and this space is even wider. All those standing waves must
+        radiate their energy along the axis only.&nbsp;</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">In
+        other words, most of the quark mass is that of its gluonic field and
+        most of this energy is radiated along the axis. So there should be a
+        strong repulsion effect along the axis as a radiation pressure, and a
+        strong transverse attraction effect as a shade effect.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">This
+        page was written a long time ago: I must add here that according to new
+        observations about the atomic structure, the electron distance inside
+        the quark could be very small, about 10 to 100 wavelengths...</p>
+        <p align="left"><b>The gluonic field amplification.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">On
+        the one hand, the electron is a standing wave system which is amplified
+        by aether waves as the result of a lens effect. On the other hand, this
+        gluonic field is also made of standing waves. So it should also be
+        amplified by aether waves. And unlike the electron, it does not contain
+        a central antinode whose volume is very narrow. This volume imposes an
+        amplification limit, and this limit is much larger in the case of the
+        gluonic field.</p>
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">So
+        the gluonic field is strongly amplified. The result should look like this:</p>
+        </font> 
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/proton09d.gif" width="640" border="0" height="301"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">The cigar-shaped gluonic field after
+its amplification.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">This is a
+simplification. The correct diagram would show about 100 million wavelengths.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">In addition, the gluonic
+field also includes the lower amplitude standing waves beyond each
+electron.&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <center>
+        
+        <font size="4" face="Times New Roman">
+        
+        <p align="left"><b>More mass then 6 electrons.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Finally,
+        one should realize that a neutron containing only 6 electrons can nevertheless be
+        1838 times more massive then just one electron. There are three main and
+        stronger "quark gluonic fields" inside a neutron, but the 6 electrons also
+        produce 12 off-axis non-quark secondary gluonic fields.</p>
+        
+        </font><p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">The
+        volume formula for an ellipsoid is (4/3)
+        </font><font size="4" face="Symbol">
+        
+        p
+        </font><font size="4" face="Times New Roman"> R1 R2 R3. Because the
+        secondary gluonic fields length equals 1 / cos 45° = 1.414 times less
+        that of the primary ones, their volume and probably their mass should be
+        worth 2.828 times less. So they are about 3 times smaller.</font></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"><font size="4" face="Times New Roman">We
+        have: (3 * x) + (12 * (x / 2.828)) = 1832 and so:&nbsp; x = 253 as the
+        main gluonic field mass. Then the secondary gluonic fields mass should
+        be worth 90 times the electron mass.&nbsp;</font></p>
+        
+        <font size="4" face="Times New Roman">
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">
+        Moreover, those gluonic fields are made of plane standing waves and most of the energy is radiated along the
+        axis. Because
+        they are amplified by aether waves, those aether waves are weakened and a shade effect must occur as an attraction
+        effect. This phenomenon can "glue" three quarks (actually 6
+        electrons) together, hence the name "gluon".&nbsp;&nbsp;</p>
+        
+        </font>
+        
+        </center>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+<p align="center"><img src="sa_quarks_files/mecanique06.gif" width="476" border="0" height="256"></p>
+
+<p align="center"><font size="4" face="Times New Roman">The gluon's attraction
+effect.</font></p>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>The gluonic beam diagram.&nbsp;</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        gluonic field beam wave diagram, to a first approximation, should be much
+        similar to that of two electrons. The main difference is that it is a
+        two-way focused beam instead of the electron's all-azimuth radiation. The computer shows that
+        when those
+        electrons are distant by many wavelengths, they
+        produce along the axis a beam which contains many interleaved
+        hyperboloids.</p>
+        
+        <p align="left"><b>The focused gluonic beam.&nbsp;</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">However,
+        because
+        most of the gluonic field standing waves are plane ones, they should
+        primarily radiate their energy on both sides along the axis. Any experienced
+        optician would agree with that. The laser, which contains a great number
+        of plane standing waves inside its Fabry-Perot cavity, also behaves
+        this way; those systems produce a "wave beam":</p>
+        
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center">&nbsp;</p>
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/quark12.jpg" width="640" border="0" height="201"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">Any gluonic field radiates two
+such wave beams on both sides along the axis.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The beam energy is much
+more powerful than that of a single electron.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The electrons can move
+transversally in a circular motion inside those cylindrical interferences.&nbsp;</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">This explains light.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>Interferences between two gluonic beams.</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify"> The proton as a whole includes its 3 main quarks and
+        its 12 secondary gluonic fields. It should radiate not less than 24 <b><i>parallel</i></b>
+        beams along 12 axis, and six stronger and unique beams along the three
+        Cartesian axes. Each
+        gluonic beam already contains interferences which are hyperboloid.
+        Because the proton produces parallel beams, the hyperboloids will cross
+        themselves on secondary true hyperbolas (not hyperboloids). The result will appear different
+        on two orthogonal planes.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        first plane contains the gluonic fields. It shows that on-axis and off-axis
+        interferences appear periodically. The on-axis interference on the right
+        side is the last one. Its distance indicates the size of an atom, more
+        exactly the distance between the proton and the <b><i>second</i></b>
+        atomic layer.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">The
+        second plane shows the same on-axis interferences from the transverse
+        point of view. The off-axis interferences are similar but they are not
+        visible. All those
+        interferences are true hyperbolas, not hyperboloids.</p>
+        
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <center>
+  <table border="4" cellpadding="0" cellspacing="6">
+    <tbody><tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/quark13.jpg" width="640" border="0" height="301"></p></td>
+    </tr>
+    <tr>
+      <td>
+        <p align="center"><img src="sa_quarks_files/quark11g.gif" width="640" border="0" height="301"></p></td>
+    </tr>
+  </tbody></table>
+  </center>
+</div>
+<p align="center"><font size="4" face="Times New Roman">&nbsp;Hyperbolic
+interferences between two gluonic beams, from two orthogonal points of view.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">Any of those hyperbolas
+can capture one electron in accordance with constant periodic distances.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">The link with the
+periodic atomic shells and the Balmer series is obvious.</font></p>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%"><font size="4" face="Times New Roman">
+        
+        <center>
+        
+        <p align="left"><b>The "black funnels".</b></p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">And
+        finally, the <b><i> absence</i></b> of those wave beams in 8 directions crossing the
+        vertices of a cube will produce 8 stunning "black funnels".
+        Those black funnels can capture electrons in a very aggressive way. They
+        will explain not only the 8 peripheral electrons, but also chemical
+        bindings, crystalline structures, electric current, semiconductors, superconductivity, etc.</p>
+        
+        <p class="MsoTitle" style="TEXT-INDENT: 35.4pt; TEXT-ALIGN: justify">Let's examine this in the next
+        page about protons.</p>
+        
+        </center>
+        </font></td>
+    </tr>
+  </tbody></table>
+</div>
+
+<p align="center"><font size="4" face="Times New Roman">&nbsp;</font></p>
+
+<font size="4" face="Times New Roman">
+
+<blockquote>
+	<blockquote>
+		<blockquote>
+			<blockquote>
+				<font face="Arial">
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+				<span class="white"><span style="font-size: 9pt">|
+				<a title="Gabriel LaFreniere" href="index.html">00</a> </span>
+				<font style="font-size: 9pt">|
+				<a title="Matter is made of Waves" href="matter.html">0<span lang="en">1</span></a> 
+				| <a title="The electron" href="sa_electron.html">02</a> |
+				<a title="Ivanov's Waves" href="sa_plane.html">03</a> |
+				<a title="Spherical Standing Waves " href="sa_spherical.html">04</a> 
+				| <a title="The Doppler Effect " href="sa_Doppler.html">05</a> |
+				<a title="The Aether " href="sa_aether.html">06</a> |
+				<a class="sa_Michelson.htm" title="The Michelson Interferometer " href="sa_Michelson.html">
+				07</a> |
+				<a title="The Lorentz Transformations " href="sa_Lorentz.html">08</a> 
+				| <a title="The Time Scanner " href="sa_scanner.html">09</a> |
+				<a title="Lorentzian Relativity Page 1 " href="sa_relativity.html">
+				10</a> |
+				<a title="Lorentzian Relativity Page 2 " href="sa_relativity2.html">
+				11</a>|
+				<a title="The Relativistic Big Bang " href="sa_Relativistic_Big_Bang.html">
+				12</a> | </font></span>
+				<a title="The Electron Phase Shift " href="sa_phaseshift.html">
+				<font style="font-size: 9pt">13</font></a><font style="font-size: 9pt"><span class="white"> 
+				| </span><a title="The Wave Mechanics " href="sa_mechanics.html">
+				14</a><span class="white"> | </span>
+				<a title="Electrostatic Fields " href="sa_electrostatic.html">15</a><span class="white"> 
+				| </span><a title="Nuclear Forces " href="sa_nuclear.html">16</a><span class="white"> 
+				| </span>
+				<a title="Active and Reactive Mass " href="sa_active.html">17</a>
+				<span class="white">| </span>
+				<a title="Kinetic Energy " href="sa_kinetic.html">18</a><span class="white"> 
+				| </span><a title="Fields of Force " href="sa_fields.html">19</a><span class="white"> 
+				| </span>
+				<a title="The Fields of Force Dynamics " href="sa_dynamics.html">
+				20</a><span class="white"> | </span>
+				<a title="Magnetic Fields " href="sa_magnetic.html">21</a><span class="white"> 
+				| </span><a title="Gravity " href="sa_gravity.html">22</a><span class="white"> 
+				| </span><a title="Light " href="sa_light.html">23</a><span class="white"> 
+				| 24 | </span>
+				<a title="Protons " href="sa_protons.html">25</a><span class="white"> 
+				| </span><a title="Atoms " href="sa_atoms.html">26</a><span class="white"> 
+				| </span><a title="Chemistry " href="sa_chemistry.html">27</a><span class="white"> 
+				| </span><a title="The Wave Theory " href="sa_wavetheory.html">28</a><span class="white"> 
+				| </span>
+				<a title="The Wave Theory Postulates " href="sa_postulates.html">
+				29</a><span class="white"> | </span>
+				<a title="The Theory of Evolution " href="sa_active_files/index.html">30</a><span class="white"> 
+				| <a title="Errors to Correct " href="sa_errors.html">31</a> |
+				<a title="Proofs and Experiences " href="sa_experiences.html">32</a> 
+				| </span>
+				<a title="The Huygens Principle " href="sa_Huygens.html">33</a><span class="white"> 
+				| </span></font><a title="Conclusion " href="sa_conclusion.html">
+				<font style="font-size: 9pt">34</font></a><span class="white"><font style="font-size: 9pt"> 
+				|</font></span></p>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+</font><font face="Times New Roman">
+<table border="0" width="100%">
+	<tr>
+		<td align="center"><font size="4" face="Times New Roman">
+		<table border="0" width="54%">
+			<!-- MSTableType="nolayout" -->
+			<tr>
+				<td><font face="Times New Roman">
+				<ol>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="matter.html">Matter is made of Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electron.html">The electron </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_plane.html">Ivanov&#39;s Waves </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_spherical.html">Spherical Standing Waves </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Doppler.html">The Doppler Effect </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_aether.html">The Aether </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Michelson.html">The Michelson Interferometer </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Lorentz.html">The Lorentz Transformations </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_scanner.html">The Time Scanner </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity.html">Lorentzian Relativity Page 1 </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_relativity2.html">Lorentzian Relativity Page 2
+					</a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Relativistic_Big_Bang.html">The Relativistic Big 
+					Bang </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_phaseshift.html">The Electron Phase Shift </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_mechanics.html">The Wave Mechanics </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_electrostatic.html">Electrostatic Fields </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_nuclear.html">Nuclear Forces </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_active.html">Active and Reactive Mass </a></b>
+					</li>
+				</ol>
+				</font></td>
+				<td><font face="Times New Roman">
+				<ol start="18">
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_kinetic.html">Kinetic Energy </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_fields.html">Fields of Force </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_dynamics.html">The Fields of Force Dynamics </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_magnetic.html">Magnetic Fields </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_gravity.html">Gravity </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_light.html">Light</a> </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					Quarks </b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_protons.html">Protons </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_atoms.html">Atoms </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_chemistry.html">Chemistry </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_wavetheory.html">The Wave Theory </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_postulates.html">The Wave Theory Postulates </a>
+					</b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_evolution.html">The Theory of Evolution </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_errors.html">Errors to Correct </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_experiences.html">Proofs and Experiences </a></b>
+					</li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_Huygens.html">The Huygens Principle </a></b></li>
+					<li>
+					<p align="left" style="margin-top: 0; margin-bottom: 0"><b>
+					<a href="sa_conclusion.html">Conclusion</a> </b></li>
+				</ol>
+				</font></td>
+			</tr>
+		</table>
+		</font></td>
+	</tr>
+</table>
+</font>
+
+</font>
+
+<div align="center">
+  <table width="90%" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+      <td width="100%">
+        
+        <font size="4" face="Times New Roman"><center>
+        <p align="left"></p></center>Gabriel LaFreniere<p></p>
+        <p align="left">Bois-des-Filion in Québec.</p>
+        <p align="left">Email&nbsp; <a href="notice.html">Please read this
+        notice.</a></p>
+        </font><p align="left"><font size="4" face="Times New Roman">On the Internet since September 2002. Last update
+        December 3, 2009.</font>
+        
+      </p></td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+
+
+<a target="_new" href="http://top.mail.ru/jump?from=800876">
+			<img src="http://d8.c3.bc.a0.top.list.ru/counter?id=800876;t=218" alt="????Mail.ru" border="0" height="1" hspace="0" width="1" vspace="1"></a></span>
+										
+			<a id="clustrMapsLink" target="_blank" href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.mirit.ru">
+			<img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.mirit.ru" style="border:1px none;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src='../../clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/';" height="1" hspace="0" width="1"></a>
+
+	
+</blockquote>
+
+</body>
+<!-- sa_quarks.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 May 2025 18:40:47 GMT -->
+</html>
